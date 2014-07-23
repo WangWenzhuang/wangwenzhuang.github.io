@@ -22,7 +22,6 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">友情链接<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="http://www.bjdfwz.cn/" target="_blank">东方微智工作室</a></li>
-            <li><a href="http://cnblogs.com/luminji" target="_blank">陆敏技的博客</a></li>
             <li><a href="http://blog.ladysp.com/" target="_blank">笨鸟-BLOG</a></li>
           </ul>
       </li>
