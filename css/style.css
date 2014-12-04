@@ -96,14 +96,6 @@ body {
 	box-shadow: inset 0 -1px 3px rgba(0,0,0,.03);
 	padding: 40px 0;
 }
-.about-count{
-}
-	.about-count a{
-		text-decoration: none;
-	}
-	.about-count a:hover{
-		text-decoration: none;
-	}
 .about-introduction{
 	background: #fff;
 	padding: 40px 0;
