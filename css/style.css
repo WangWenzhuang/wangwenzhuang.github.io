@@ -192,7 +192,9 @@ body {
     display: none;
     text-align: center;
 }
-
+    #elevator_item .qr-popup span{
+        text-align: center;
+    }
     #elevator_item .qr-popup .code-link {
         display: block;
         margin: 10px;
