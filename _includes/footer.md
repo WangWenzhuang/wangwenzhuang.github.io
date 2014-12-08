@@ -4,7 +4,7 @@
     <a id="elevator" onclick="return false;" title="回到顶部"></a>
     <a class="qr"></a>
     <div class="qr-popup">
-        <a class="code-link"><img class="code" src="" /></a>
+        <a class="code-link"><img class="code" src="/images/code.jpg" /></a>
         <span>微信二维码</span>
         <div class="arr"></div>
     </div>

@@ -207,7 +207,7 @@ body {
     #elevator_item .qr-popup .arr {
         width: 6px;
         height: 11px;
-        background: url(/images/fluidicon.png) 0 0 no-repeat;
+        background: url(/images/code_arrow.png) 0 0 no-repeat;
         position: absolute;
         right: -6px;
         bottom: 14px;
