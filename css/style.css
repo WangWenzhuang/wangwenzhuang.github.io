@@ -4,6 +4,8 @@ body {
 	font-size: 18px;
 }
 .content{
+    margin-right: auto;
+    margin-left: auto;
 	margin-top: 20px;
 	padding: 10px;
 	margin-bottom: 20px;
