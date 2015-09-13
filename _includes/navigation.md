@@ -14,19 +14,18 @@
         <li id='nav1'><a href="/">文章</a></li>
         <li id='nav2'><a href="/case/">成功案例</a></li>
         <li><a href="https://github.com/WangWenzhuang">GitHub</a></li>
-        <li id='nav4'><a href="/msgboard/">留言板</a></li>
+        <!--<li id='nav4'><a href="/msgboard/">留言板</a></li>-->
+        <li id='nav3'><a href="/about/">关于</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <!--<ul class="nav navbar-nav navbar-right">
         <li id='nav3'><a href="/about/">关于</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">友情链接<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="http://luminji.cnblogs.com/" target="_blank">陆敏技的博客</a></li>
             <li><a href="http://blog.ladysp.com/" target="_blank">笨鸟-BLOG</a></li>
-            <li><a href="http://www.bjdfwz.cn/" target="_blank">东方微智工作室</a></li>
           </ul>
       </li>
-      </ul>
+      </ul>-->
     </div>
   </div>
 </nav>
