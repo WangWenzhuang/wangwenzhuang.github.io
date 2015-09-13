@@ -53,17 +53,18 @@ body {
 .page-line{
 	border-top:1px dashed #e8e7d0;
 	margin-top: 20px;
-	padding-top: 10px;
+	padding-top: 20px;
 	text-align: left;
 }
 .page-line-time{
-    margin-left: 40px;
+    margin-left: 60px;
     color: #990033;
     font-style:oblique;
 }
 .page-line-title{
     margin-left: 20px;
     color: #990033;
+    font-style:oblique;
 }
 .page-pagination{
 	margin-top: 20px;
