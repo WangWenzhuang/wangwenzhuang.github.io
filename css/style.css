@@ -1,7 +1,7 @@
 /*global*/ 
 body {
 	font-family: 'Microsoft YaHei UI','Microsoft YaHei',DengXian,SimSun,'Segoe UI',Tahoma,Helvetica,sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 }
 .content{
 	margin-top: 20px;
@@ -50,22 +50,20 @@ body {
 	}
 
 /*page*/
-.page-title{
-	color: #990033;
-}
-.page-description{
-	margin-top: 10px;
-	text-indent: 2em;
-}
-.page-more{
-	color: #a48d66;
-}
-.page-time-line{
+.page-line{
 	border-top:1px dashed #e8e7d0;
 	margin-top: 15px;
 	padding-top: 10px;
 	text-align: right;
-	color: #666666;
+}
+.page-line-time{
+    margin-left: 20px;
+    color: #990033;
+    font-style:italic;
+}
+.page-line-title{
+    margin-left: 20px;
+    color: #990033;
 }
 .page-pagination{
 	margin-top: 20px;
