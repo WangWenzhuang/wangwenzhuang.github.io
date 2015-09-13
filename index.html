@@ -10,17 +10,8 @@ layout: page
 <div class="container content">
 	{% for post in paginator.posts %}
 		<div>
+			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 			<a class="page-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-			<p class="page-description">{{ post.description }}...<a class="page-more" href="{{ post.url }}">阅读全文</a></p>
-			<div class="page-time-line">
-				分类：<span class="page-time-line-categories">{{ post.categories }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;
-				标签：
-				{% for tag in post.tags %}
-					<span class="page-time-line-tag">{{ tag }}</span>
-				{% endfor %}
-				&nbsp;&nbsp;|&nbsp;&nbsp;
-				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-			</div>
 		</div>
 	{% endfor %}
 	<div class="page-pagination">
