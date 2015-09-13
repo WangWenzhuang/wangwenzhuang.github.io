@@ -1,7 +1,7 @@
 /*global*/ 
 body {
 	font-family: 'Microsoft YaHei UI','Microsoft YaHei',DengXian,SimSun,'Segoe UI',Tahoma,Helvetica,sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
 .content{
 	margin-top: 20px;
@@ -52,14 +52,14 @@ body {
 /*page*/
 .page-line{
 	border-top:1px dashed #e8e7d0;
-	margin-top: 15px;
+	margin-top: 20px;
 	padding-top: 10px;
 	text-align: left;
 }
 .page-line-time{
-    margin-left: 20px;
+    margin-left: 40px;
     color: #990033;
-    font-style:italic;
+    font-style:oblique;
 }
 .page-line-title{
     margin-left: 20px;
