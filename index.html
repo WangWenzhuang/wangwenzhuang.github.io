@@ -9,7 +9,7 @@ layout: page
 </script>
 <div class="container content">
 	{% for post in paginator.posts %}
-		<div>
+		<div class="page-time-line">
 			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 			<a class="page-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		</div>

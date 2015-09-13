@@ -53,6 +53,20 @@ body {
 .page-title{
 	color: #990033;
 }
+.page-description{
+	margin-top: 10px;
+	text-indent: 2em;
+}
+.page-more{
+	color: #a48d66;
+}
+.page-time-line{
+	border-top:1px dashed #e8e7d0;
+	margin-top: 15px;
+	padding-top: 10px;
+	text-align: right;
+	color: #666666;
+}
 .page-pagination{
 	margin-top: 20px;
 	text-align: center;
