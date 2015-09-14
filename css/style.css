@@ -18,9 +18,10 @@ body {
     color: #990033;
 }
 .menu ul li a{
-    color: #990033;
+    color: rgba(144, 56, 56, 0.86);
 }
 .footer{
+    color: #D6D6D6;
     font-size: 13px;
     margin-top: 20px;
 	text-align: center;
