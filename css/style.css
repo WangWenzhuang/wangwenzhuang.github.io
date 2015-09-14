@@ -42,16 +42,20 @@ body {
     color: #990033;
 }
 .page-pagination{
+    font-size: 14px;
     margin-top: 20px;
     text-align: center;
 }
 .page-paginator-nav{
+    font-size: 14px;
     color: #990033;
 }
 .page-paginator-disable{
+    font-size: 14px;
     color: #CCCCCC;
 }
 .page-paginator-number{
+    font-size: 14px;
     color: #663333;
 }
 
