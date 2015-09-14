@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王文壮的博客</title>
+    <link rel="fluid-icon" href="/fluidicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144.png" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                var scrolltop = $(this).scrollTop();
+                if (scrolltop >= 100) {
+                    $("#elevator_item").show();
+                } else {
+                    $("#elevator_item").hide();
+                }
+            });
+            $("#elevator").click(function () {
+                $("html,body").animate({ scrollTop: 0 }, 500);
+            });
+            $(".qr").hover(function () {
+                $(".qr-popup").show();
+            }, function () {
+                $(".qr-popup").hide();
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <div class="container menu">
+      <ul>
+  <li><a href="/">博客</a></li>
+  <li>/</li>
+  <li><a href="https://github.com/WangWenzhuang">GitHub</a></li>
+  <li>/</li>
+  <li><a href="/about/">关于</a></li>
+</ul>
+    </div>
+    <div class="container content">
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2015-07-21">2015-07-21</time>
+			<a class="page-line-title" href="/2015/07/21/ios-build-ffmpeg/" title="iOS 编译 FFmpeg">iOS 编译 FFmpeg</a>
+		</div>
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2014-12-12">2014-12-12</time>
+			<a class="page-line-title" href="/2014/12/12/00010/" title="腹肌撕裂者，签到帖">腹肌撕裂者，签到帖</a>
+		</div>
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2014-11-29">2014-11-29</time>
+			<a class="page-line-title" href="/2014/11/29/00009/" title="2014年11月29日，减肥">2014年11月29日，减肥</a>
+		</div>
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2014-10-22">2014-10-22</time>
+			<a class="page-line-title" href="/2014/10/22/programmers-book/" title="程序员最该看的书">程序员最该看的书</a>
+		</div>
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2014-08-14">2014-08-14</time>
+			<a class="page-line-title" href="/2014/08/14/weixin-core/" title="微信公众账号开发核心库">微信公众账号开发核心库</a>
+		</div>
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2014-07-06">2014-07-06</time>
+			<a class="page-line-title" href="/2014/07/06/git-command/" title="Git 常用命令">Git 常用命令</a>
+		</div>
+	
+		<div class="page-line">
+			<time class="page-line-time" datetime="2014-06-26">2014-06-26</time>
+			<a class="page-line-title" href="/2014/06/26/http-validation/" title="HTTP GET 方法的简单访问效验">HTTP GET 方法的简单访问效验</a>
+		</div>
+	
+	<div class="page-pagination">
+		
+			&nbsp;&nbsp;<span class="page-paginator-disable">&lt;&lt;上一页</span>
+		
+
+		&nbsp;&nbsp;<span class="page-paginator-number">1</span>&nbsp;/&nbsp;<span class="page-paginator-number">1</span>&nbsp;&nbsp;
+
+		
+			<span class="page-paginator-disable">下一页&gt;&gt;</span>
+		
+	</div>
+</div>
+
+    <div class="container footer">
+      <p>&copy;&nbsp;Copyright 2014 - 2015&nbsp;王文壮</p>
+<p style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3431972'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/stat.php%3Fid%3D3431972' type='text/javascript'%3E%3C/script%3E"));</script></p>
+<div id="elevator_item">
+    <a id="elevator" onclick="return false;" title="回到顶部"></a>
+    <a class="qr"></a>
+    <div class="qr-popup">
+        <a class="code-link"><img class="code" src="/images/code.jpg" style="width:150px;height:150px;" /></a>
+        <span>我的微信二维码</span>
+        <div class="arr"></div>
+    </div>
+</div>
+
+    </div>
+  </body>
+</html>

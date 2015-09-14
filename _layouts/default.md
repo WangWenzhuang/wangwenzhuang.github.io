@@ -10,8 +10,10 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-144.png" />
     <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144.png" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $(window).scroll(function () {
@@ -34,8 +36,8 @@
     </script>
   </head>
   <body>
-    <div>
-      {% include navigation.md %}
+    <div class="container menu">
+      {% include head.md %}
     </div>
     {{ content }}
     <div class="container footer">

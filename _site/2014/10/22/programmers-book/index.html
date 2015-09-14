@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>程序员最该看的书</title>
+    <link rel="fluid-icon" href="/fluidicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144.png" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                var scrolltop = $(this).scrollTop();
+                if (scrolltop >= 100) {
+                    $("#elevator_item").show();
+                } else {
+                    $("#elevator_item").hide();
+                }
+            });
+            $("#elevator").click(function () {
+                $("html,body").animate({ scrollTop: 0 }, 500);
+            });
+            $(".qr").hover(function () {
+                $(".qr-popup").show();
+            }, function () {
+                $(".qr-popup").hide();
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <div class="container menu">
+      <ul>
+  <li><a href="/">博客</a></li>
+  <li>/</li>
+  <li><a href="https://github.com/WangWenzhuang">GitHub</a></li>
+  <li>/</li>
+  <li><a href="/about/">关于</a></li>
+</ul>
+    </div>
+    <div class="container content">
+	<h4 class="post-title">程序员最该看的书</h4>
+	<div class="post-title-line"></div>
+	<div class="post-content">
+	<ul>
+  <li><code>《代码大全》 史蒂夫·迈克康奈尔</code></li>
+  <li><code>《程序员修炼之道》</code></li>
+  <li><code>《计算机程序的构造和解释》</code></li>
+  <li><code>《算法导论》</code></li>
+  <li><code>《重构：改善既有代码的设计》</code></li>
+  <li><code>《设计模式》</code></li>
+  <li><code>《人月神话》</code></li>
+  <li><code>《计算机程序设计艺术》</code></li>
+  <li><code>《编译原理》（龙书）</code></li>
+  <li><code>《哥德尔、艾舍尔、巴赫书：集异璧之大成》</code></li>
+  <li><code>《代码整洁之道》</code></li>
+  <li><code>《编程珠玑》</code></li>
+  <li><code>《修改代码的艺术》Michael Feathers</code></li>
+  <li><code>《编码：隐匿在计算机软硬件背后的语言》</code></li>
+  <li><code>《企业应用架构模式》</code></li>
+  <li><code>《交互设计之路》</code></li>
+  <li><code>《编程人生》</code></li>
+  <li><code>《Practices of an Agile Developer / 高效程序员的45个习惯：敏捷开发修炼之道》</code></li>
+  <li><code>《Test-Driven Development by Example. / 测试驱动开发》</code></li>
+</ul>
+
+	</div>
+	<div class="post-time-line">
+		分类：<span class="post-time-line-categories">技术</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<time datetime="2014-10-22">2014-10-22</time>
+	</div>
+	<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wangwenzhuang"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!-- Duoshuo Comment END -->
+</div>
+    <div class="container footer">
+      <p>&copy;&nbsp;Copyright 2014 - 2015&nbsp;王文壮</p>
+<p style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3431972'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/stat.php%3Fid%3D3431972' type='text/javascript'%3E%3C/script%3E"));</script></p>
+<div id="elevator_item">
+    <a id="elevator" onclick="return false;" title="回到顶部"></a>
+    <a class="qr"></a>
+    <div class="qr-popup">
+        <a class="code-link"><img class="code" src="/images/code.jpg" style="width:150px;height:150px;" /></a>
+        <span>我的微信二维码</span>
+        <div class="arr"></div>
+    </div>
+</div>
+
+    </div>
+  </body>
+</html>

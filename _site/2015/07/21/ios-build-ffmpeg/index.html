@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iOS 编译 FFmpeg</title>
+    <link rel="fluid-icon" href="/fluidicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144.png" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="text/javascript">
+        $(function () {
+            $(window).scroll(function () {
+                var scrolltop = $(this).scrollTop();
+                if (scrolltop >= 100) {
+                    $("#elevator_item").show();
+                } else {
+                    $("#elevator_item").hide();
+                }
+            });
+            $("#elevator").click(function () {
+                $("html,body").animate({ scrollTop: 0 }, 500);
+            });
+            $(".qr").hover(function () {
+                $(".qr-popup").show();
+            }, function () {
+                $(".qr-popup").hide();
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <div class="container menu">
+      <ul>
+  <li><a href="/">博客</a></li>
+  <li>/</li>
+  <li><a href="https://github.com/WangWenzhuang">GitHub</a></li>
+  <li>/</li>
+  <li><a href="/about/">关于</a></li>
+</ul>
+    </div>
+    <div class="container content">
+	<h4 class="post-title">iOS 编译 FFmpeg</h4>
+	<div class="post-title-line"></div>
+	<div class="post-content">
+	<h4 id="gas-preprocessor">下载 gas-preprocessor</h4>
+
+<ul>
+  <li>
+    <p>下载 gas-preprocessor：<a href="https://github.com/libav/gas-preprocessor">https://github.com/libav/gas-preprocessor</a></p>
+  </li>
+  <li>
+    <p>复制<strong>gas-preprocessor.pl</strong>到/usr/sbin下</p>
+  </li>
+  <li>
+    <p>修改文件权限：chmod 777 /usr/sbin/gas-preprocessor.pl</p>
+  </li>
+</ul>
+
+<h4 id="yasm">安装 yasm</h4>
+
+<pre><code>curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz &gt;yasm.tar.gz
+
+tar xzvf yasm.tar.gz
+
+cd yasm-1.2.0
+
+./configure
+
+make
+
+sudo make install
+</code></pre>
+
+<p>可以到<a href="http://www.tortall.net/projects/yasm/releases">http://www.tortall.net/projects/yasm/releases</a>查看最新版本 ，将 <strong>yasm-1.2.0.tar.gz</strong> 替换即可</p>
+
+<h4 id="ffmpeg-ios-build-script">下载 FFmpeg-iOS-build-script（编译脚本）</h4>
+
+<ul>
+  <li>
+    <p>下载 FFmpeg-iOS-build-script：<a href="https://github.com/kewlbear/FFmpeg-iOS-build-script">https://github.com/kewlbear/FFmpeg-iOS-build-script</a></p>
+  </li>
+  <li>
+    <p>执行 ./build-ffmpeg.sh（编译所有版本）</p>
+  </li>
+  <li>
+    <p>上条语句执行完毕执行 ./build-ffmpeg.sh lipo（将所有架构.a文件合并）</p>
+  </li>
+  <li>
+    <p>执行完上述命令，在 <strong>FFmpeg-iOS-build-script</strong> 文件夹下会生成 <strong>FFmpeg-iOS</strong> 文件夹，进入 <strong>FFmpeg-iOS</strong> 文件夹查看支持架构：lipo -info libavcodec.a</p>
+  </li>
+</ul>
+
+<h4 id="ffmpeg">使用 FFmpeg</h4>
+<ul>
+  <li>
+    <p>需要引入的库：libz.dylib、libbz2.dylib、libiconv.dylib</p>
+  </li>
+  <li>
+    <p>将 <strong>FFmpeg-iOS</strong> 拖入到工程</p>
+  </li>
+  <li>
+    <p>设置 <strong>Library Search Paths</strong> 为“$(PROJECT_DIR)/项目名称/FFmpeg-iOS/lib    non-recursive”</p>
+  </li>
+  <li>
+    <p>设置 <strong>Header Search Paths</strong> 为“$(PROJECT_DIR)/项目名称/FFmpeg-iOS/include    non-recursive”</p>
+  </li>
+  <li>
+    <p>设置 <strong>Always Search User Paths</strong> 为“NO”</p>
+  </li>
+</ul>
+
+<h4 id="section">事例下载</h4>
+
+<p>这里有份使用 FFMPEG 播放视频的代码：<a href="https://github.com/kolyvan/kxmovie">https://github.com/kolyvan/kxmovie</a></p>
+
+	</div>
+	<div class="post-time-line">
+		分类：<span class="post-time-line-categories">技术</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<time datetime="2015-07-21">2015-07-21</time>
+	</div>
+	<!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wangwenzhuang"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+<!-- Duoshuo Comment END -->
+</div>
+    <div class="container footer">
+      <p>&copy;&nbsp;Copyright 2014 - 2015&nbsp;王文壮</p>
+<p style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3431972'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/stat.php%3Fid%3D3431972' type='text/javascript'%3E%3C/script%3E"));</script></p>
+<div id="elevator_item">
+    <a id="elevator" onclick="return false;" title="回到顶部"></a>
+    <a class="qr"></a>
+    <div class="qr-popup">
+        <a class="code-link"><img class="code" src="/images/code.jpg" style="width:150px;height:150px;" /></a>
+        <span>我的微信二维码</span>
+        <div class="arr"></div>
+    </div>
+</div>
+
+    </div>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 title: 王文壮的博客
 layout: page
 ---
-<div class="content">
+<div class="container content">
 	{% for post in paginator.posts %}
 		<div class="page-line">
 			<time class="page-line-time" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -20,7 +20,7 @@ layout: page
 			&nbsp;&nbsp;<span class="page-paginator-disable">&lt;&lt;上一页</span>
 		{% endif %}
 
-		&nbsp;&nbsp;第<span class="page-paginator-number">{{ paginator.page }}</span>页&nbsp;/&nbsp;共<span class="page-paginator-number">{{ paginator.total_pages }}</span>页&nbsp;&nbsp;
+		&nbsp;&nbsp;<span class="page-paginator-number">{{ paginator.page }}</span>&nbsp;/&nbsp;<span class="page-paginator-number">{{ paginator.total_pages }}</span>&nbsp;&nbsp;
 
 		{% if paginator.next_page %}
 			<a href="/page{{ paginator.next_page }}" class="page-paginator-nav">下一页&gt;&gt;</a>&nbsp;&nbsp;
