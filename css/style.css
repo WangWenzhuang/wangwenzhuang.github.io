@@ -63,6 +63,7 @@ body {
 
 /*post*/ 
 .post-title{
+    margin-top: 20px;
 	color: #990033;
 }
 .post-title-line{
