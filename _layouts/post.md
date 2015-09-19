@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container content">
-	<h4 class="post-title">{{ page.title }}</h4>
+	<h4 class="post-title page-line-time">{{ page.title }}</h4>
 	<div class="post-title-line"></div>
 	<div class="post-content">
 	{{ content }}
