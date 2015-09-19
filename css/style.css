@@ -1,6 +1,6 @@
 /*global*/ 
 body {
-	font-family: arial, helvetica, sans-serif;
+	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif
 	font-size: 16px;
 }
 .menu{
@@ -91,6 +91,10 @@ body {
 		padding: 12px;
 		color: #fff;
 	}
+    .post-content img{
+        width: 100%;
+        height: auto;
+    }
 
 /*about*/
 .about-info{
