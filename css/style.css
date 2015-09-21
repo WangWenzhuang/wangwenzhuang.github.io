@@ -1,4 +1,7 @@
 /*global*/ 
+html * {
+    -webkit-font-smoothing: antialiased;
+}
 body {
 	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
 	font-size: 16px;
