@@ -5,4 +5,4 @@ author: 王文壮
 encoding: utf-8
 paginate: 20
 paginate_path: "page:num"
-pygments: true
+highlighter: pygments
