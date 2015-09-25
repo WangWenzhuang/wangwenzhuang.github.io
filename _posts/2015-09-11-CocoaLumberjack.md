@@ -35,11 +35,11 @@ published: true
 
 *	在“- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions”中添加
 
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
-	// 允许颜色
-    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-    // 自定义日志颜色，这里更改默认 Debug 颜色
-    [[DDTTYLogger sharedInstance] setForegroundColor:UIColorFromRGB(100, 56, 32) backgroundColor:[UIColor whiteColor] forFlag:DDLogFlagDebug];
+		[DDLog addLogger:[DDTTYLogger sharedInstance]];
+		// 允许颜色
+	    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+	    // 自定义日志颜色，这里更改默认 Debug 颜色
+	    [[DDTTYLogger sharedInstance] setForegroundColor:UIColorFromRGB(100, 56, 32) backgroundColor:[UIColor whiteColor] forFlag:DDLogFlagDebug];
 
 *	使用方法
 	
