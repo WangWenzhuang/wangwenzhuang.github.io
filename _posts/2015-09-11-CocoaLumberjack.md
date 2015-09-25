@@ -17,7 +17,7 @@ published: true
 
 *	在“- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions” 中添加
 	
-	setenv("XcodeColors", "YES", 0);
+		setenv("XcodeColors", "YES", 0);
 
 ####  CocoaLumberjack ####
 
@@ -27,11 +27,11 @@ published: true
 
 *	在 xxx.pch 文件中定义日志级别
 
-	#ifdef DEBUG
-	static const int ddLogLevel = DDLogLevelVerbose;
-	#else
-	static const int ddLogLevel = DDLogLevelError;
-	#endif
+		#ifdef DEBUG
+		static const int ddLogLevel = DDLogLevelVerbose;
+		#else
+		static const int ddLogLevel = DDLogLevelError;
+		#endif
 
 *	在“- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions”中添加
 
@@ -43,8 +43,8 @@ published: true
 
 *	使用方法
 	
-	DDLogDebug(@"Debug");
-    DDLogError(@"Error");
-    DDLogWarn(@"Warning");
-    DDLogInfo(@"Info");
-    DDLogVerbose(@"Verbose");
+		DDLogDebug(@"Debug");
+	    DDLogError(@"Error");
+	    DDLogWarn(@"Warning");
+	    DDLogInfo(@"Info");
+	    DDLogVerbose(@"Verbose");

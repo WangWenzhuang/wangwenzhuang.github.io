@@ -11,11 +11,7 @@ published: true
 
 开发语言是 C#，大部分功能已经实现，简单易用。 
 
-[GitHub](https://github.com/wangwenzhuang)
-
-如果需要看实现功能，可以扫描下面二维码，关注测试帐号。
-
-![扫一扫二维码](https://raw.githubusercontent.com/WangWenzhuang/WeiXin/master/OR.jpg)
+[WeiXin - GitHub](https://github.com/WangWenzhuang/WeiXin)
 
 #### 快速使用 ####
 
