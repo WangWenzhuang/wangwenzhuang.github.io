@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Swift 笔记"
+description: "Swift 笔记，记录、查询"
+category: 技术
+tags: []
+published: true
+---
+
+#### 目录 ####
+
+[变量和常量](#1)
+	
+	[变量](#1.1)
+
+	[常量](#1.2)
+
+<h4 id='1'> 变量和常量 </h4>
+
+<h5 id='1.1'>变量</h5>
+
+	var myValue="Hello"
+	var myValue:String="Hello"
+
+<h5 id='1.2'>常量</h5>
+
+	let myValue="Hello"
+	let myValue:String="Hello"
