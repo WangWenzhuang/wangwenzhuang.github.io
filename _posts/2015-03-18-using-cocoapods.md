@@ -18,7 +18,7 @@ CocoaPods 就是为了解决这些麻烦的事情的，使用 CocoaPods 只需�
 祖国的大局域网是安装不成功的，需要替换 ruby 的源更新为淘宝源：
 
     $ gem sources --remove https://rubygems.org/
-    $ gem sources -a http://ruby.taobao.org/
+    $ gem sources -a https://ruby.taobao.org/
     $ gem sources -l
 
 输出：http://ruby.taobao.org/就代表替换成功
