@@ -39,7 +39,10 @@ published: true
 	// 允许颜色
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
     // 自定义日志颜色，这里更改默认 Debug 颜色
-    [[DDTTYLogger sharedInstance] setForegroundColor:UIColorFromRGB(100, 56, 32) backgroundColor:[UIColor whiteColor] forFlag:DDLogFlagDebug];</code></pre>
+    [[DDTTYLogger sharedInstance]
+     setForegroundColor:[UIColor redColor]
+     backgroundColor:[UIColor whiteColor]
+     forFlag:DDLogFlagDebug];</code></pre>
 
 *	使用方法
 	
