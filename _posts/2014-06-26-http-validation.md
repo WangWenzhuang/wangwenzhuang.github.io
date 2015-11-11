@@ -19,8 +19,7 @@ published: true
 
 公用的生成签名类
 
-<pre><code class="language-csharp">
-public sealed class SignatureHelper
+<pre><code class="language-csharp">public sealed class SignatureHelper
 {
     /*
      * 必备参数：token、时间戳、随机数（9位）
@@ -80,14 +79,11 @@ public sealed class SignatureHelper
         var tmpStr = SignatureHelper.CreateSignature(tempArr);
         return tmpStr.Equals(signature);
     }
-}
-</code></pre>
+}</code></pre>
 
 接口定义
 
-<pre><code class="language-csharp">
-[HttpGet]
-/*
+<pre><code class="language-csharp">/*
  * signature：签名结果
  * timestamp：时间戳
  * nonce：随机字符串
@@ -140,13 +136,11 @@ private bool CheckTimeOut(string timestamp)
         result = false;
     }
     return result;
-}
-</code></pre>
+}</code></pre>
 
 请求
 
-<pre><code class="language-csharp">
-public static string TestGetData()
+<pre><code class="language-csharp">public static string TestGetData()
 {
     var timestamp = SignatureHelper.CreateTimestamp();
     var nonce = SignatureHelper.CreateRandomNumber();
@@ -158,5 +152,4 @@ public static string TestGetData()
         timestamp,
         nonce);
     // 请求代码...
-}
-</code></pre>
+}</code></pre>

@@ -16,8 +16,8 @@ published: true
 *	退出 Xcode，退出 Xcode，退出 Xcode。重要的事情说三遍。
 
 *	在“- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions” 中添加
-	
-		setenv("XcodeColors", "YES", 0);
+
+	<pre><code class="language-objectivec">setenv("XcodeColors", "YES", 0);</code></pre>
 
 ####  CocoaLumberjack ####
 
@@ -27,30 +27,24 @@ published: true
 
 *	在 xxx.pch 文件中定义日志级别
 
-	<pre><code class="language-objectivec">
-	#ifdef DEBUG
+	<pre><code class="language-objectivec">#ifdef DEBUG
 	static const int ddLogLevel = DDLogLevelVerbose;
 	#else
 	static const int ddLogLevel = DDLogLevelError;
-	#endif
-	</code></pre>
+	#endif</code></pre>
 
 *	在“- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions”中添加
 
-	<pre><code class="language-objectivec">
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
+	<pre><code class="language-objectivec">[DDLog addLogger:[DDTTYLogger sharedInstance]];
 	// 允许颜色
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
     // 自定义日志颜色，这里更改默认 Debug 颜色
-    [[DDTTYLogger sharedInstance] setForegroundColor:UIColorFromRGB(100, 56, 32) backgroundColor:[UIColor whiteColor] forFlag:DDLogFlagDebug];
-    </code></pre>
+    [[DDTTYLogger sharedInstance] setForegroundColor:UIColorFromRGB(100, 56, 32) backgroundColor:[UIColor whiteColor] forFlag:DDLogFlagDebug];</code></pre>
 
 *	使用方法
 	
-	<pre><code class="language-objectivec">
-	DDLogDebug(@"Debug");
+	<pre><code class="language-objectivec">DDLogDebug(@"Debug");
     DDLogError(@"Error");
     DDLogWarn(@"Warning");
     DDLogInfo(@"Info");
-    DDLogVerbose(@"Verbose");
-    </code></pre>
+    DDLogVerbose(@"Verbose");</code></pre>

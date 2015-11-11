@@ -17,20 +17,16 @@ CocoaPods 就是为了解决这些麻烦的事情的，使用 CocoaPods 只需�
 
 祖国的大局域网是安装不成功的，需要替换 ruby 的源更新为淘宝源：
 
-<pre><code class="language-bash">
-gem sources --remove https://rubygems.org/
+<pre><code class="language-bash">gem sources --remove https://rubygems.org/
 gem sources -a https://ruby.taobao.org/
-gem sources -l
-</code></pre>
+gem sources -l</code></pre>
 
 输出：http://ruby.taobao.org/就代表替换成功
 
 #### CocoaPods 安装 ####
 
-<pre><code class="language-bash">
-sudo gem install cocoapods
-pod setup
-</code></pre>
+<pre><code class="language-bash">sudo gem install cocoapods
+pod setup</code></pre>
 
 等待安装成功。
 
@@ -38,8 +34,7 @@ pod setup
 
 进入工程目录，创建 Podfile 文件，下面是一个例子：
 
-<pre><code class="language-bash">
-source 'https://github.com/CocoaPods/Specs.git'
+<pre><code class="language-bash">source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Artsy/Specs.git'
 inhibit_all_warnings!
 
@@ -47,22 +42,17 @@ platform :ios, '7.0'
 pod 'SVProgressHUD'
 pod 'CocoaLumberjack'
 pod 'AFNetworking', '~> 2.0'
-pod 'SDWebImage'
-</code></pre>
+pod 'SDWebImage'</code></pre>
 
 Podfile 文件的具体用法点这里[CocoaPods Guides - The Podfile](http://guides.cocoapods.org/using/the-podfile.html)
 
 Terminal 进入到工程目录，输入如下代码：
 
-<pre><code class="language-bash">
-pod install
-</code></pre>
+<pre><code class="language-bash">pod install</code></pre>
 
 等待完成。完成之后会生成.xcworkspace 文件，在此之后打开工程使用此文件打开，而不是.xcodeproj 以后每次更新 Podfile 文件只需执行
 
-<pre><code class="language-bash">
-pod update
-</code></pre>
+<pre><code class="language-bash">pod update</code></pre>
 
 #### 可能出现的问题 ####
 
