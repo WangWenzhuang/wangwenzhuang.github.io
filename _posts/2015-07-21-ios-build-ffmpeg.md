@@ -17,17 +17,19 @@ published: true
 
 #### 安装 yasm ####
 
-	curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz >yasm.tar.gz
+<pre><code class="language-bash">
+curl http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz >yasm.tar.gz
 
-	tar xzvf yasm.tar.gz
+tar xzvf yasm.tar.gz
 
-	cd yasm-1.2.0
+cd yasm-1.2.0
 
-	./configure
+./configure
 
-	make
+make
 
-	sudo make install
+sudo make install
+</code></pre>
 
 可以到[http://www.tortall.net/projects/yasm/releases](http://www.tortall.net/projects/yasm/releases)查看最新版本 ，将 **yasm-1.2.0.tar.gz** 替换即可
 
