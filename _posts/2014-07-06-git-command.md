@@ -11,22 +11,17 @@ published: true
 
 设置用户信息
 
-<pre><code class="language-bash">
-git config --global user.name "WangWenzhuang"
+<pre><code class="language-bash">git config --global user.name "WangWenzhuang"
 git config --global user.email "1020304029@qq.com"
 </code></pre>
 
 查看配置信息列表
 
-<pre><code class="language-bash">
-git config --list
-</code></pre>
+<pre><code class="language-bash">git config --list</code></pre>
 
 查看单个配置信息
 
-<pre><code class="language-bash">
-git config user.name
-</code></pre>
+<pre><code class="language-bash">git config user.name</code></pre>
 
 生成 SSH 公钥
 
