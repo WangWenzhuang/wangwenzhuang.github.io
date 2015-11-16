@@ -2,6 +2,10 @@
 html * {
     -webkit-font-smoothing: antialiased;
 }
+
+@media all and (width:1024px){
+    body{color:#f00;}
+}
 body {
 	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
 	font-size: 16px;
@@ -18,10 +22,10 @@ body {
 .menu ul li{
     display:inline;
     margin: 2px;
-    color: #990033;
+    color: rgba(54, 53, 56, 0.85);
 }
 .menu ul li a{
-    color: rgba(144, 56, 56, 0.86);
+    color: rgba(54, 53, 56, 0.85);
 }
 .footer{
     color: #D6D6D6;
