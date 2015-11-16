@@ -56,9 +56,17 @@ Terminal 进入到工程目录，输入如下代码：
 
 #### 可能出现的问题 ####
 
-`Undefined symbols for architecture x86_64:`
+*	`Undefined symbols for architecture x86_64:`
 
-解决办法：
+	解决办法：
 
-修改Other Linker Flags，增加$(inherited)
+	修改Other Linker Flags，增加$(inherited)
+
+*	`ERROR:  While executing gem ... (Errno::EPERM)
+    Operation not permitted - /usr/bin/xcodeproj`
+
+
+	解决办法：
+
+	<pre><code class="language-bash">sudo gem install -n /usr/local/bin cocoapods</code></pre>
 
