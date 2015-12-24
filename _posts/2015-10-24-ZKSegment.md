@@ -13,11 +13,11 @@ ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 
 [ZKSegment - GitHub](https://github.com/WangWenzhuang/ZKSegment)
 
-![ZKSegment](/images/post/2015-10-24-ZKSegment/1.png)
+<img src="/images/post/2015-10-24-ZKSegment/1.png" />
 
-![ZKSegment](/images/post/2015-10-24-ZKSegment/2.png)
+<img src="/images/post/2015-10-24-ZKSegment/2.png" />
 
-![ZKSegment](/images/post/2015-10-24-ZKSegment/3.png)
+<img src="/images/post/2015-10-24-ZKSegment/3.png" />
 
 #### 安装 ####
 
