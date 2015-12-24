@@ -3,7 +3,7 @@ layout: post
 title: "ZKSegment 功能强大的分段选择控件"
 description: "ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大"
 category: 技术
-tags: ["XcodeColors","CocoaLumberjack"]
+tags: ["ZKSegment"]
 published: true
 ---
 
