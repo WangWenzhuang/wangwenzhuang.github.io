@@ -21,14 +21,11 @@ ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 
 #### 安装 ####
 
-CocoaPods
-
-<pre><code class="language-bash">pod 'ZKSegment'</code></pre>
+<pre><code class="language-bash">CocoaPods：pod 'ZKSegment'</code></pre>
 
 #### 快速使用 ####
 
-<pre><code class="language-objectivec">[DDLog addLogger:[DDTTYLogger sharedInstance]];
-_ZKSegment = [ZKSegment
+<pre><code class="language-objectivec">_ZKSegment = [ZKSegment
     zk_segmentWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45)
                   style:ZKSegmentLineStyle];
 _ZKSegment.zk_itemClickBlock=^(NSString *itemName , NSInteger itemIndex){
@@ -41,7 +38,7 @@ _ZKSegment.zk_itemClickBlock=^(NSString *itemName , NSInteger itemIndex){
 
 #### 自定义 ####
 
-<pre><code class="language-objectivec">zk_itemDefaultColor		\\设置每一项文本默认颜色
+<pre><code class="language-objectivec">zk_itemDefaultColor				\\设置每一项文本默认颜色
 
 zk_itemStyleSelectedColor		\\设置每一项文本选中颜色
 
