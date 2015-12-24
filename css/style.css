@@ -2,14 +2,25 @@
 html * {
     -webkit-font-smoothing: antialiased;
 }
-
-@media all and (width:1024px){
-    body{color:#f00;}
-}
 body {
 	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
 	font-size: 16px;
 }
+
+.content {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .content {
+        width: 80%;
+        max-width: 710px;
+    }
+}
+
 .menu{
     text-align: center;
     margin-top: 30px;

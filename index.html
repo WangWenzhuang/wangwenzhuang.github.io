@@ -2,7 +2,7 @@
 title: 王文壮的博客
 layout: page
 ---
-<div class="container content">
+<div class="content">
 	{% for post in paginator.posts %}
 		<div class="page-line">
 			<time class="page-line-time" datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
