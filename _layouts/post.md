@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="content">
+<div class="container">
 	<div class="post-title-line"></div>
 	<div class="post-title">{{ page.title }}</div>
 	<div class="post-content">

@@ -7,20 +7,6 @@ body {
 	font-size: 16px;
 }
 
-.content {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto
-}
-
-@media (min-width:768px) {
-    .content {
-        width: 80%;
-        max-width: 710px;
-    }
-}
-
 .menu{
     text-align: center;
     margin-top: 30px;
@@ -46,6 +32,19 @@ body {
 }
 
 /*page*/
+.page {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .page {
+        width: 80%;
+        max-width: 710px;
+    }
+}
 .page-line{
     border-top:1px dashed #e8e7d0;
     margin-top: 20px;

@@ -38,11 +38,11 @@
     </script>
   </head>
   <body>
-    <div class="content menu">
+    <div class="container menu">
       {% include head.md %}
     </div>
     {{ content }}
-    <div class="content footer">
+    <div class="container footer">
       {% include footer.md %}
     </div>
   </body>
