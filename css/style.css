@@ -42,7 +42,7 @@ body {
 @media (min-width:768px) {
     .page {
         width: 80%;
-        max-width: 710px;
+        max-width: 600px;
     }
 }
 .page-line{
