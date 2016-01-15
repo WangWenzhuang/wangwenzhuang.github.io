@@ -19,10 +19,10 @@ body {
 .menu ul li{
     display:inline;
     margin: 2px;
-    color: #7c6853;
 }
 .menu ul li span{
     color: #000000;
+    ont-size: 12px;
 }
 .footer{
     color: #9C9C9C;
