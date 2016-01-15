@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ZKAlertView 封装了 UIAlertView，简单易用，Block 回调，丢掉各种 tag"
+title: "ZKAlertView 封装了 UIAlertView，简单易用"
 description: "ZKAlertView 封装了 UIAlertView，简单易用，Block 回调，丢掉各种 tag"
 category: 技术
 tags: ["ZKAlertView"]
