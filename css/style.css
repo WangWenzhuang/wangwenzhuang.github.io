@@ -19,10 +19,9 @@ body {
 .menu ul li{
     display:inline;
     margin: 2px;
-    color: rgba(54, 53, 56, 0.85);
 }
 .menu ul li a{
-    color: rgba(54, 53, 56, 0.85);
+    color: rgba(158, 100, 57);
 }
 .footer{
     color: #9C9C9C;
