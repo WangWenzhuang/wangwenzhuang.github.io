@@ -19,10 +19,12 @@ body {
 .menu ul li{
     display:inline;
     margin: 2px;
-}
-.menu ul li a{
     color: rgba(158, 100, 57);
 }
+.menu ul li span{
+    color: #000000;
+}
+
 .footer{
     color: #9C9C9C;
     font-size: 13px;
