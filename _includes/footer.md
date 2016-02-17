@@ -1,13 +1,4 @@
 <p>&copy;&nbsp;Copyright 2014 - {{site.time | date:"%Y"}}&nbsp;{{ site.author }}</p>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?2647be066b5c11cc8f6a27bd02cb71af";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 <div id="elevator_item">
     <a id="elevator" onclick="return false;" title="回到顶部"></a>
     <a class="qr"></a>
