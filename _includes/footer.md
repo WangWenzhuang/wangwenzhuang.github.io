@@ -1,5 +1,13 @@
 <p>&copy;&nbsp;Copyright 2014 - {{site.time | date:"%Y"}}&nbsp;{{ site.author }}</p>
-<p style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3431972'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/stat.php%3Fid%3D3431972' type='text/javascript'%3E%3C/script%3E"));</script></p>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?2647be066b5c11cc8f6a27bd02cb71af";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 <div id="elevator_item">
     <a id="elevator" onclick="return false;" title="回到顶部"></a>
     <a class="qr"></a>
