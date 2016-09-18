@@ -9,11 +9,11 @@ published: true
 
 #### 环境 ####
 
-使用 Swift 2.3，AFNetworking 3.1.0
+*	使用 Swift 2.3
 
-[AFNetworking - GitHub](https://github.com/AFNetworking/AFNetworking)
+*	AFNetworking 3.1.0，[AFNetworking - GitHub](https://github.com/AFNetworking/AFNetworking)
 
-调试输出使用 *CocoaLumberjack* [CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
+*	CocoaLumberjack，调试输出使用，[CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
 #### 代码 ####
 
