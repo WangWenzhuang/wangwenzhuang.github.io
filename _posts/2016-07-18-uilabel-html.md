@@ -16,7 +16,7 @@ published: true
 *设置分割线颜色*
 
 <pre><code class="language-swift">// label 是 UILabel
-let html = "<html><body><p style='text-align:center;'><span style='font-size:16px;color:#707070;'>哈哈哈哈</span></p></body></html>"
+let html = "&lt;html&gt;&lt;body&gt;&lt;p style=&#x27;text-align:center;&#x27;&gt;&lt;span style=&#x27;font-size:16px;color:#707070;&#x27;&gt;哈哈哈哈&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
 do {
     try label.attributedText = NSAttributedString(data: html.dataUsingEncoding(NSUnicodeStringEncoding)!, options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType ], documentAttributes: nil)
 } catch {
