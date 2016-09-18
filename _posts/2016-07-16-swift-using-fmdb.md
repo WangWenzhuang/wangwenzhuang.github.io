@@ -25,21 +25,30 @@ published: true
 <pre><code class="language-swift">db.open()
 </code></pre>
 
-*更新数据库*
+*更新数据*
 
 >   insert、update、delete...等语句统一属于更新操作（executeUpdate）
 
-<pre><code class="language-swift">AFNetworkReachabilityManager.sharedManager().startMonitoring()
-AFNetworkReachabilityManager.sharedManager().setReachabilityStatusChangeBlock { (status) in
-    switch status {
-    case .Unknown:
-        DDLogDebug("当前网络状态：Unknown")
-    case .NotReachable:
-        DDLogDebug("当前网络状态：NotReachable")
-    case .ReachableViaWWAN:
-        DDLogDebug("当前网络状态：ReachableViaWWAN")
-    case .ReachableViaWiFi:
-        DDLogDebug("当前网络状态：ReachableViaWiFi")
-    }
+<pre><code class="language-swift">// 创建表
+db.executeUpdate("CREATE TABLE NewsCategory([key] varchar(32),[sort] integer,[value] varchar(500),[type] varchar(30),isFixed integer,isCme integer);", withArgumentsInArray: nil)
+// 插入数据
+db.executeUpdate("INSERT INTO [NewsCategory] VALUES ('0', 0, '最新资讯', '0', 1, 0);", withArgumentsInArray: nil)
+// 更新数据
+db.executeUpdate("UPDATE [NewsCategory] SET [value]='最热资讯' WHERE WHERE [key]='0';", withArgumentsInArray: nil)
+// 删除数据
+db.executeUpdate("DELETE FROM [NewsCategory]", withArgumentsInArray: nil)
+</code></pre>
+
+*查询数据*
+
+<pre><code class="language-swift">let result = db.executeQuery("select * from [NewsCategory] order by [sort]", withArgumentsInArray: nil)
+while result.next() {
+    // result.stringForColumn("key")! 得到key列
+    // result.intForColumn("isCme") 得到isCme列
 }
+</code></pre>
+
+*关闭数据库*
+
+<pre><code class="language-swift">db.close()
 </code></pre>
