@@ -17,19 +17,24 @@ published: true
 
 *Get 请求*
 
-<pre><code class="language-swift">
-let manager = AFHTTPSessionManager()
+<pre><code class="language-swift">let manager = AFHTTPSessionManager()
 manager.GET(url, parameters: parameters, progress: nil, success: { (task, responseObject) in
     if responseObject != nil {
-        output(task, responseObject: responseObject)
-        if success != nil {
-            success!(responseObject: responseObject!)
-        }
+        print(responseObject)
     }
 }) { (task, error) in
-    DDLogError((task!.currentRequest?.URL?.absoluteString)! + "  ******  error:\r" + error.description)
-    if failure != nil {
-        failure!()
-    }
+    print((task!.currentRequest?.URL?.absoluteString)! + "  ******  error:\r" + error.description)
 }
+</code></pre>
+
+*Post 请求*
+
+<pre><code class="language-swift">let manager = AFHTTPSessionManager()
+manager.POST(url, parameters: parameters, progress: nil, success: { (task, responseObject) in
+    if responseObject != nil {
+        print(responseObject)
+    }
+}, failure: { (task, error) in
+    print((task!.currentRequest?.URL?.absoluteString)! + "  ******  error:\r" + error.description)
+})
 </code></pre>
