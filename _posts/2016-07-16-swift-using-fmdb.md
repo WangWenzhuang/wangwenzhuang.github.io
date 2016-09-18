@@ -15,7 +15,7 @@ published: true
 
 #### 代码 ####
 
-##### 指定数据库 #####
+*指定数据库*
 
 <pre><code class="language-swift">let db = FMDatabase(path: "路径")
 </code></pre>
