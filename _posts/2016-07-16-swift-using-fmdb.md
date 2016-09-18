@@ -52,3 +52,19 @@ while result.next() {
 
 <pre><code class="language-swift">db.close()
 </code></pre>
+
+*扩展*
+
+<pre><code class="language-swift">import FMDB
+extension FMDatabase {
+    static func manager() -> FMDatabase {
+        let db = FMDatabase(path: "路径")
+        let isOpen = db.open()
+        assert(isOpen, "打开数据库失败")
+        return db
+    }
+}
+
+// 使用
+// let db = FMDatabase.manager()
+</code></pre>
