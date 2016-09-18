@@ -9,13 +9,13 @@ published: true
 
 #### 环境 ####
 
-*	使用 Swift 2.3
+*   使用 Swift 2.3
 
-*	FMDB 2.5，[FMDB - GitHub](https://github.com/ccgus/fmdb)
+*   FMDB 2.5，[FMDB - GitHub](https://github.com/ccgus/fmdb)
 
 #### 代码 ####
 
-*指定数据库*
+##### 指定数据库 #####
 
 <pre><code class="language-swift">let db = FMDatabase(path: "路径")
 </code></pre>
