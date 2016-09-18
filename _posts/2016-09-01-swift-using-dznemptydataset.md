@@ -42,6 +42,10 @@ func imageForEmptyDataSet(scrollView: UIScrollView!) -> UIImage! {
 
 func titleForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
 	// 数据为空是显示的文字
-    return NSAttributedString(string: "没有数据", attributes: [ NSFontAttributeName : UIFont(name: "HelveticaNeue", size: 17)!, NSForegroundColorAttributeName : UIColor.redColor() ])
+    return NSAttributedString(
+    string: "没有数据", 
+    attributes: 
+    	 [ NSFontAttributeName : UIFont(name: "HelveticaNeue", size: 17)!, 
+    	 NSForegroundColorAttributeName : UIColor.redColor() ])
 }
 </code></pre>
