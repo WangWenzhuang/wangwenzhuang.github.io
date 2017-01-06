@@ -71,14 +71,6 @@ body{
     padding-top: 20px;
     text-align: left;
 }
-.page-line-time{
-    display: none; 
-}
-@media (min-width:768px){
-    .page {
-        color: #AAAAAA;
-    }
-}
 .page-line a{
     color: #333;
     text-decoration: none;
@@ -86,6 +78,14 @@ body{
 .page-line a:hover{
     color: #333;
     text-decoration: solid 1px;
+}
+.page-line a time{
+    display: none; 
+}
+@media (min-width:768px){
+    .page-line a time{
+        color: #AAAAAA;
+    }
 }
 .page-pagination{
     margin-top: 20px;
