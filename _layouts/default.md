@@ -50,8 +50,10 @@
 
   </head>
   <body>
-    <div class="container menu">
-      {% include head.md %}
+    <div class="menu">
+        <div class="container menubar">
+        {% include head.md %}
+        </div>
     </div>
     {{ content }}
     <div class="container footer">

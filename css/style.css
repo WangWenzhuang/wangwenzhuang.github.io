@@ -10,6 +10,11 @@ body{
 }
 
 .menu{
+    content: '';
+    display: block;
+    position: absolute;
+}
+.menubar{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -18,28 +23,28 @@ body{
     margin-top: 30px;
 }
 @media (min-width:768px){
-    .menu{
+    .menubar{
         width: 80%;
         max-width: 600px;
     }
 }
-.menu ul{
+.menubar ul{
     list-style:none;
     padding-left: 0px;
     margin-bottom: 0px;
 }
-.menu ul li{
+.menubar ul li{
     display:inline;
     margin: 2px 13px 2px 13px;
 }
 
-.menu ul li a{
+.menubar ul li a{
     font-weight: bold;
     color: #333;
     text-decoration: none;
 }
 
-.menu ul li a:hover{
+.menubar ul li a:hover{
     color: #333;
     border-bottom: 3px solid #990033;
 }
