@@ -64,7 +64,7 @@ body{
     }
 }
 .page-line{
-    border-top:1px dashed #e8e7d0;
+    border-top:1px dashed #DDDDDD;
     margin-top: 20px;
     padding-top: 20px;
     text-align: left;
@@ -93,23 +93,21 @@ body{
     color: #333;
 }
 .page-paginator-disable{
-    color: #BBBBBB;
-}
-.page-paginator-number{
-    color: #990033;
+    color: #AAAAAA;
 }
 
 
 /*post*/ 
 .post-title{
+    font-weight: bold;
     margin-top: 20px;
 }
 .post-title-line{
-	border-top:1px dashed #e8e7d0;
+	border-top:1px dashed #DDDDDD;
 	margin-top: 20px;
 }
 .post-time-line{
-	border-top:1px dashed #e8e7d0;
+	border-top:1px dashed #DDDDDD;
 	margin-top: 15px;
 	padding-top: 10px;
 	text-align: right;
@@ -122,11 +120,10 @@ body{
 	margin-top: 15px;
 }
 	.post-content h4{
-		background-color: #272822;
+		background-color: #CCCCCC;
         border-radius: 4px;
-        border-left: 10px solid #e6db74;
+        border-left: 10px solid #333;
 		padding: 12px;
-		color: #fff;
 	}
     .post-content img{
         width: 100%;
