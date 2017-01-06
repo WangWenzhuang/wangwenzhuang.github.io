@@ -41,7 +41,7 @@ body {
 
 .menu ul li a:hover {
     color: #333;
-    border-bottom: 3px double #990033;
+    border-bottom: 3px solid #990033;
 }
 
 .footer{
@@ -70,7 +70,7 @@ body {
     text-align: left;
 }
 .page-line-time{
-    color: #7c6853;
+    color: #333;
     font-style:oblique;
 }
 .page-line-title{
