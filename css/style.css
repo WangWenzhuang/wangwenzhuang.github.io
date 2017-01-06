@@ -34,8 +34,14 @@ body {
 }
 
 .menu ul li a{
+    font-weight: bold;
+    font-size: 18px;
     color: #4a4a4a;
     text-decoration: none;
+}
+
+.menu ul li a:hover {
+    border-bottom: 3px double #4a4a4a;
 }
 
 .footer{
