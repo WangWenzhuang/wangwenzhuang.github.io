@@ -75,7 +75,7 @@ body{
 }
 .page-line a:hover{
     color: #333;
-    text-decoration: underline;
+    border-bottom: 2px solid #333;
 }
 .page-line a time{
     color: #AAAAAA; 
@@ -146,12 +146,11 @@ body{
 }
 .about-info{
     margin-top: 20px;
-	background: #EFEFEF;
-	box-shadow: inset 0 -1px 3px rgba(0,0,0,.03);
+	background: #CCCCCC;
 	padding: 40px 0;
 }
 .about-introduction{
-	background: #CCCCCC;
+	background: #EEEEEE;
 	padding: 40px 0;
 }
 .about-skills{
