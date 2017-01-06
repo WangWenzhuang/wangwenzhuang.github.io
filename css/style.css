@@ -8,11 +8,17 @@ body {
 }
 
 .menu{
-    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*text-align: center;*/
     margin-top: 30px;
 }
 @media (min-width:768px) {
     .menu {
+        text-align: center;
+        margin-top: 30px;
         width: 80%;
         max-width: 600px;
     }
@@ -41,7 +47,7 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
 }
 
 @media (min-width:768px) {
