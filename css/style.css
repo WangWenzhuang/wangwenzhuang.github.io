@@ -72,7 +72,12 @@ body{
     text-align: left;
 }
 .page-line-time{
-    color: #AAAAAA;
+    display: none; 
+}
+@media (min-width:768px){
+    .page {
+        color: #AAAAAA;
+    }
 }
 .page-line a{
     color: #333;
@@ -80,7 +85,7 @@ body{
 }
 .page-line a:hover{
     color: #333;
-    text-decoration: solid;
+    text-decoration: solid 1px;
 }
 .page-pagination{
     margin-top: 20px;
