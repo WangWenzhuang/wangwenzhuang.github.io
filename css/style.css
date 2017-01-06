@@ -75,9 +75,21 @@ body {
     color: #333;
     font-style:oblique;
 }
+@media (min-width:768px) {
+    .page-line-time{
+        display: block;
+        color: #333;
+        font-style:oblique;
+    }
+}
 .page-line-title{
     margin-left: 30px;
     color: #565656;
+}
+@media (min-width:768px) {
+    .page-line-title{
+        color: #565656;
+    }
 }
 .page-pagination{
     margin-top: 20px;
