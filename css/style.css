@@ -33,6 +33,11 @@ body {
     margin: 2px 20px 2px 0px;
 }
 
+.menu ul li a{
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
 .footer{
     color: #9C9C9C;
     font-size: 13px;
