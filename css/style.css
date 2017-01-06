@@ -72,31 +72,18 @@ body {
     text-align: left;
 }
 .page-line-time{
-    color: #333;
-    font-style:oblique;
-}
-@media (min-width:768px) {
-    .page-line-time{
-        display: block;
-        color: #333;
-        font-style:oblique;
-    }
+    color: #888888;
 }
 .page-line-title{
     margin-left: 30px;
-    color: #565656;
-}
-@media (min-width:768px) {
-    .page-line-title{
-        color: #565656;
-    }
+    color: #333;
 }
 .page-pagination{
     margin-top: 20px;
     text-align: center;
 }
 .page-paginator-nav{
-    color: #565656;
+    color: #333;
 }
 .page-paginator-disable{
     color: #CCCCCC;
@@ -109,7 +96,6 @@ body {
 /*post*/ 
 .post-title{
     margin-top: 20px;
-	color: #565656;
 }
 .post-title-line{
 	border-top:1px dashed #e8e7d0;
@@ -123,7 +109,7 @@ body {
 	color: #666666;
 }
 .post-time-line-categories{
-	color: #565656;
+	color: #990033;
 }
 .post-content{
 	margin-top: 15px;
