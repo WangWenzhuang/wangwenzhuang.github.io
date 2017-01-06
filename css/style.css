@@ -80,6 +80,7 @@ body{
 }
 .page-line a:hover{
     color: #333;
+    text-decoration: solid;
 }
 .page-pagination{
     margin-top: 20px;
@@ -89,10 +90,10 @@ body{
     color: #333;
 }
 .page-paginator-disable{
-    color: #CCCCCC;
+    color: #BBBBBB;
 }
 .page-paginator-number{
-    color: #663333;
+    color: #990033;
 }
 
 
