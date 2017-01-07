@@ -144,6 +144,9 @@ body{
 	text-align: right;
 }
 .post-footer-categories{
+	color: #CC3366;
+}
+.post-footer-tags{
 	color: #fc0;
 }
 /*about*/
