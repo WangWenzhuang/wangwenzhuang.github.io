@@ -45,7 +45,7 @@ body{
 }
 @media (min-width:768px){
     .menu ul li a{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 .menu ul li a:hover{
@@ -87,12 +87,13 @@ body{
 }
 .index-item a{
     color: #ddd;
+    font-weight: bold;
     text-decoration: none;
 }
 .index-item a:hover{
     color: #fc0;
 }
-.index-ite-time{
+.index-item-time{
     color: #8e8e8e; 
 }
 @media (max-width:768px){
