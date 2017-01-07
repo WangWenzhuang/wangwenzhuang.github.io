@@ -72,7 +72,7 @@ body{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 @media (min-width:768px){
     .index {
@@ -81,7 +81,7 @@ body{
     }
 }
 .index-item{
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #434343;
     padding: 20px;
     text-align: left;
 }
@@ -162,7 +162,7 @@ body{
     }
 }
 .about-info{
-    margin-top: 20px;
+    margin-top: 30px;
 	background: #CCCCCC;
 	padding: 40px 0;
 }

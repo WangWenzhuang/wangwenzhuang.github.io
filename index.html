@@ -10,12 +10,6 @@ layout: page
 				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;&nbsp;</time>
 			</span>
 			<a href="{{ post.url }}" title="{{ post.title }}">
-				{% if page.categories == "技术" %}
-					<span class="fa fa-code"></span>
-				{% else %}
-					<span class="fa fa-code"></span>
-				{% endif %}
-				&nbsp;
 				{{ post.title }}
 			</a>
 		</div>
