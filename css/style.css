@@ -77,11 +77,11 @@ body{
     color: #333;
     border-bottom: 2px solid #333;
 }
-.page-line a time{
+.page-line time{
     color: #AAAAAA; 
 }
 @media (max-width:768px){
-    .page-line a time{
+    .page-line time{
         display: none;
     }
 }
