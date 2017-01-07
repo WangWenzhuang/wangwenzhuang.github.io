@@ -20,6 +20,7 @@ a{
     text-decoration: none;
 }
 a:hover{
+    text-decoration: none;
     color: #fc0;
 }
 .menu{
