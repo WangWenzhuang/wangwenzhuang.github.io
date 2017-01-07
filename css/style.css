@@ -158,9 +158,9 @@ a:hover{
     }
 }
 .about-item{
-    padding: 25px;
     border-bottom: 1px solid #3f3f3f;
 }
 .about-item h2{
+    margin-top: 20px;
     margin-bottom: 20px;
 }
