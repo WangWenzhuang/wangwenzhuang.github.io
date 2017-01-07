@@ -13,18 +13,18 @@ layout: page
 		<div class="index-box-pagination">
 			{% if paginator.previous_page %}
 				{% if paginator.previous_page ==1 %}
-					<a href="/" class="index-box-paginator-nav">&lt;&lt;上一页</a>
+					<a href="/" class="index-box-paginator-nav"><span class="fa fa-chevron-circle-left"></span>&nbsp;上一页</a>
 				{% else %}
-					<a href="/page{{ paginator.previous_page }}" class="index-box-paginator-nav">&lt;&lt;上一页</a>
+					<a href="/page{{ paginator.previous_page }}"><span class="fa fa-chevron-circle-left"></span>&nbsp;上一页</a>
 				{% endif %}
 			{% else %}
-				&nbsp;&nbsp;<span class="index-box-paginator-disable">&lt;&lt;上一页</span>
+				<span><span class="fa fa-chevron-circle-left"></span>&nbsp;上一页</span>
 			{% endif %}
 
 			&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;
 
 			{% if paginator.next_page %}
-				<a href="/page{{ paginator.next_page }}" class="index-box-paginator-nav">下一页&nbsp;<span class="fa fa-chevron-circle-right"></span></a>&nbsp;&nbsp;
+				<a href="/page{{ paginator.next_page }}" class="index-box-paginator-nav">下一页&nbsp;<span class="fa fa-chevron-circle-right"></span></a>
 			{% else %}
 				<span>下一页&nbsp;<span class="fa fa-chevron-circle-right"></span></span>
 			{% endif %}
