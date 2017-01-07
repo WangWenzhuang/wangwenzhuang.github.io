@@ -24,8 +24,8 @@ body{
 }
 @media (min-width:768px){
     .menu{
-        width: 90%;
-        max-width: 690px;
+        width: 80%;
+        max-width: 614px;
     }
 }
 .menu ul{
@@ -61,8 +61,8 @@ body{
 }
 @media (min-width:768px){
     .footer{
-        width: 90%;
-        max-width: 690px;
+        width: 80%;
+        max-width: 614px;
     }
 }
 /*index*/
@@ -75,47 +75,43 @@ body{
 }
 @media (min-width:768px){
     .index {
-        width: 90%;
-        max-width: 690px;
+        width: 80%;
+        max-width: 614px;
     }
 }
-.index-box{
-    background-color: #444;
-    border-radius: 10px;
-}
-.index-box-item{
+.index-item{
     border-bottom: 1px solid #555;
     padding: 20px;
     text-align: left;
 }
-.index-box-item a{
+.index-item a{
     color: #ddd;
     text-decoration: none;
 }
-.index-box-item a:hover{
+.index-item a:hover{
     color: #fc0;
 }
-.index-box-ite-time{
+.index-ite-time{
     color: #8e8e8e; 
 }
 @media (max-width:768px){
-    .index-box-ite-time{
+    .index-ite-time{
         display: none;
     }
 }
-.index-box-pagination{
+.index-pagination{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
-.index-box-pagination a{
+.index-pagination a{
     color: #ddd;
     text-decoration: none;
 }
-.index-box-pagination a:hover{
+.index-pagination a:hover{
     color: #fc0;
 }
-.index-box-pagination-disabled{
+.index-pagination-disabled{
     color: #8e8e8e;
 }
 /*post*/ 
@@ -160,8 +156,8 @@ body{
 
 @media (min-width:768px) {
     .about {
-        width: 90%;
-        max-width: 690px;
+        width: 80%;
+        max-width: 614px;
     }
 }
 .about-info{
