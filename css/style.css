@@ -3,8 +3,9 @@ html *{
     -webkit-font-smoothing: antialiased;
 }
 body{
-	font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "微软雅黑", sans-serif;
 	font-size: 16px;
+    font-weight: 300;
     color: #ddd;
     background: #333;
 }
@@ -28,17 +29,16 @@ body{
     }
 }
 .menu ul{
-    list-style:none;
+    list-style: none;
     padding-left: 0px;
     margin-bottom: 0px;
 }
 .menu ul li{
-    display:inline;
+    display: inline;
     margin: 2px 13px 2px 13px;
 }
 .menu ul li a{
     font-size: 16px;
-    font-weight: bold;
     color: #ddd;
     text-decoration: none;
 }
