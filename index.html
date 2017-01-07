@@ -5,7 +5,7 @@ layout: page
 <div class="page">
 	{% for post in paginator.posts %}
 		<div class="page-line">
-			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>&nbsp;&nbsp;&nbsp;&nbsp;
+			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;&nbsp;</time>
 			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		</div>
 	{% endfor %}
