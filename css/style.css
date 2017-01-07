@@ -24,8 +24,8 @@ body{
 }
 @media (min-width:768px){
     .menu{
-        width: 80%;
-        max-width: 614px;
+        width: 85%;
+        max-width: 652px;
     }
 }
 .menu ul{
@@ -62,8 +62,8 @@ body{
 }
 @media (min-width:768px){
     .footer{
-        width: 80%;
-        max-width: 614px;
+        width: 85%;
+        max-width: 652px;
     }
 }
 /*index*/
@@ -76,8 +76,8 @@ body{
 }
 @media (min-width:768px){
     .index {
-        width: 80%;
-        max-width: 614px;
+        width: 85%;
+        max-width: 652px;
     }
 }
 .index-item{
@@ -157,8 +157,8 @@ body{
 
 @media (min-width:768px) {
     .about {
-        width: 80%;
-        max-width: 614px;
+        width: 85%;
+        max-width: 652px;
     }
 }
 .about-info{
