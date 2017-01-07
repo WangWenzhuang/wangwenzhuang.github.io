@@ -3,7 +3,7 @@ layout: default
 ---
 <script>
 	$(function () {
-        $("blog").css("color","#fc0");
+        $("#blog").css("color","#fc0");
 	});
 </script>
 <div class="container">
