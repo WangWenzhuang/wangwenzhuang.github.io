@@ -83,27 +83,26 @@ body{
 .index-box{
     background-color: #444;
     border-radius: 10px;
+    padding: 20px;
 }
-.index-line{
-    background: #444;
-    border-top:1px dashed #DDDDDD;
-    margin-top: 20px;
-    padding-top: 20px;
+.index-box-item{
+    border-bottom: 1px solid #555;
+    padding: 20px;
     text-align: left;
 }
-.index-line a{
+.index-box-item a{
     color: #ddd;
     text-decoration: none;
 }
-.index-line a:hover{
+.index-box-item a:hover{
     color: #ddd;
     color: #fc0;
 }
-.index-line time{
-    color: #AAAAAA; 
+.index-box-item time{
+    color: #8e8e8e; 
 }
 @media (max-width:768px){
-    .page-line time{
+    .index-box-item time{
         display: none;
     }
 }
