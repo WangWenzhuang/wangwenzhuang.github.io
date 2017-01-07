@@ -81,7 +81,7 @@ body{
     }
 }
 .index-item{
-    border-bottom: 1px solid #434343;
+    border-bottom: 1px solid #3f3f3f;
     padding: 20px;
     text-align: left;
 }
@@ -119,10 +119,6 @@ body{
 .post-title{
     font-weight: bold;
     margin-top: 20px;
-}
-.post-title-line{
-	border-top:1px dashed #DDDDDD;
-	margin-top: 20px;
 }
 .post-time-line{
 	border-top:1px dashed #DDDDDD;
