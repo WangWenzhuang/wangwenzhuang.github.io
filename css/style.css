@@ -149,26 +149,13 @@ a:hover{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    padding: 25px;
+    border-bottom: 1px solid #3f3f3f;
 }
-
 @media (min-width:768px) {
     .about {
         width: 85%;
         max-width: 652px;
     }
-}
-.about-info{
-    margin-top: 30px;
-	background: #3d3d3d;
-	padding: 20px;
-}
-.about-introduction{
-	background: #39342d;
-	padding: 20px;
-}
-.about-skills{
-	padding: 20px;
-	background: #3F1F1F;
-	margin-bottom: 20px;
 }
