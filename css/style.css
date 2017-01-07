@@ -35,9 +35,9 @@ body{
 }
 
 .menu ul li a{
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
-    color: #333;
+    color: #ddd;
     text-decoration: none;
 }
 
@@ -71,12 +71,12 @@ body{
     text-align: left;
 }
 .page-line a{
-    color: #333;
+    color: #ddd;
     text-decoration: none;
 }
 .page-line a:hover{
-    color: #333;
-    border-bottom: 2px solid #333;
+    color: #ddd;
+    color: #990033;
 }
 .page-line time{
     color: #AAAAAA; 
