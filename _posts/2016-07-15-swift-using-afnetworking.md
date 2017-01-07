@@ -7,7 +7,7 @@ tags: ["Swfit","AFNetworking"]
 published: true
 ---
 
-# 环境 #
+## 环境 ##
 
 *	使用 Swift 2.3
 
@@ -15,7 +15,7 @@ published: true
 
 *	CocoaLumberjack，调试输出使用，[CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
-# 代码 #
+## 代码 ##
 
 *Get 请求*
 
