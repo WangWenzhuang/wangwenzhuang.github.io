@@ -2,6 +2,11 @@
 title: 王文壮的博客
 layout: page
 ---
+<script>
+	$(function () {
+        $("blog").css("color","#fc0");
+	});
+</script>
 <div class="index">
 	{% for post in paginator.posts %}
 		<div class="index-item">

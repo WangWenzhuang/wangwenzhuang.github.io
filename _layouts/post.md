@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<script>
+	$(function () {
+        $("blog").css("color","#fc0");
+	});
+</script>
 <div class="container">
 	<div class="post-title"><span class="fa fa-bookmark"></span>&nbsp;{{ page.title }}</div>
 	<div class="post-time">
