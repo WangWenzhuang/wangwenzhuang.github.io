@@ -11,7 +11,8 @@ layout: default
 		{% if page.tags != empty %}
 			<span class="fa fa-tag"></span>&nbsp;
 			{% for tag in page.tags %}
-				<span class="post-footer-tags">{{ tag }}</span>、
+				<span class="post-footer-tags">{{ tag }}</span>
+				{% if forloop.last == false %}、{%endif %}
 			{% endfor %}
 		{%endif %}
 	</div>
