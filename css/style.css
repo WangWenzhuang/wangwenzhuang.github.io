@@ -83,12 +83,10 @@ body{
 .index-item{
     border-bottom: 1px solid #3f3f3f;
     padding: 20px 10px 20px 10px;
-    text-align: center;
 }
 @media (min-width:768px){
     .index-item {
         padding: 20px 20px 20px 20px;
-        text-align: left;
     }
 }
 .index-item a{
