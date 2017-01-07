@@ -123,14 +123,11 @@ body{
 /*post*/ 
 .post-title{
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 1.5em;
     text-align: left;
-}
-@media (max-width:768px){
-    .post-title{
-        text-align: center;
-    }
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 20px;
 }
 .post-content{
 	margin-top: 40px;
