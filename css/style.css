@@ -160,15 +160,15 @@ a:hover{
 }
 .about-info{
     margin-top: 30px;
-	background: #CCCCCC;
+	background: #3d3d3d;
 	padding: 40px 0;
 }
 .about-introduction{
-	background: #EEEEEE;
+	background: #39342d;
 	padding: 40px 0;
 }
 .about-skills{
 	padding: 40px 0;
-	background: #39342d;
+	background: #3F1F1F;
 	margin-bottom: 20px;
 }
