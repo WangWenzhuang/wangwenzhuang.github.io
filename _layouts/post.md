@@ -3,7 +3,9 @@ layout: default
 ---
 <div class="container">
 	<div class="post-title">{{ page.title }}</div>
-	<span class="fa fa-calendar"></span>&nbsp;<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+	<div class="post-time">
+		<span class="fa fa-calendar"></span>&nbsp;<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+	</div>
 	<div class="post-content">{{ content }}</div>
 	<div class="post-footer">
 		<span class="fa fa-folder"></span>&nbsp;
