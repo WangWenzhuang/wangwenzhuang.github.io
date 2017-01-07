@@ -18,15 +18,15 @@ layout: page
 					<a href="/page{{ paginator.previous_page }}"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
 				{% endif %}
 			{% else %}
-				<span><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</span>
+				<span class="index-box-pagination-disabled"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</span>
 			{% endif %}
 
-			&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
 
 			{% if paginator.next_page %}
 				<a href="/page{{ paginator.next_page }}">下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></a>
 			{% else %}
-				<span>下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></span>
+				<span class="index-box-pagination-disabled">下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></span>
 			{% endif %}
 		</div>
 	</div>

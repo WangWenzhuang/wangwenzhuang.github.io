@@ -108,15 +108,15 @@ body{
     margin-bottom: 20px;
     text-align: center;
 }
-.index-box-paginator a{
+.index-box-pagination a{
     color: #ddd;
     text-decoration: none;
 }
-.index-box-paginator a:hover{
+.index-box-pagination a:hover{
     color: #fc0;
 }
-.index-box-paginator span{
-    color: #AAAAAA;
+.index-box-pagination-disabled{
+    color: #8e8e8e;
 }
 /*post*/ 
 .post-title{
