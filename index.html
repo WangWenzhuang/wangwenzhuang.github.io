@@ -2,30 +2,32 @@
 title: 王文壮的博客
 layout: page
 ---
-<div class="page">
-	{% for post in paginator.posts %}
-		<div class="page-line">
-			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;&nbsp;</time>
-			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-		</div>
-	{% endfor %}
-	<div class="page-pagination">
-		{% if paginator.previous_page %}
-			{% if paginator.previous_page ==1 %}
-				<a href="/" class="page-paginator-nav">&lt;&lt;上一页</a>
+<div class="index">
+	<div class="index-box">
+		{% for post in paginator.posts %}
+			<div class="index-line">
+				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;&nbsp;</time>
+				<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			</div>
+		{% endfor %}
+		<div class="index-pagination">
+			{% if paginator.previous_page %}
+				{% if paginator.previous_page ==1 %}
+					<a href="/" class="index-paginator-nav">&lt;&lt;上一页</a>
+				{% else %}
+					<a href="/page{{ paginator.previous_page }}" class="index-paginator-nav">&lt;&lt;上一页</a>
+				{% endif %}
 			{% else %}
-				<a href="/page{{ paginator.previous_page }}" class="page-paginator-nav">&lt;&lt;上一页</a>
+				&nbsp;&nbsp;<span class="index-paginator-disable">&lt;&lt;上一页</span>
 			{% endif %}
-		{% else %}
-			&nbsp;&nbsp;<span class="page-paginator-disable">&lt;&lt;上一页</span>
-		{% endif %}
 
-		&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;
+			&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;
 
-		{% if paginator.next_page %}
-			<a href="/page{{ paginator.next_page }}" class="page-paginator-nav">下一页&gt;&gt;</a>&nbsp;&nbsp;
-		{% else %}
-			<span class="page-paginator-disable">下一页&gt;&gt;</span>
-		{% endif %}
+			{% if paginator.next_page %}
+				<a href="/page{{ paginator.next_page }}" class="index-paginator-nav">下一页&gt;&gt;</a>&nbsp;&nbsp;
+			{% else %}
+				<span class="index-paginator-disable">下一页&gt;&gt;</span>
+			{% endif %}
+		</div>
 	</div>
 </div>
