@@ -130,6 +130,10 @@ body{
     border-bottom: 1px solid #3f3f3f;
     padding-bottom: 20px;
 }
+.post-time{
+    margin-top: 20px;
+    text-align: right;
+}
 .post-content{
 	margin-top: 40px;
 }
