@@ -161,3 +161,6 @@ a:hover{
     padding: 25px;
     border-bottom: 1px solid #3f3f3f;
 }
+.about-item h2{
+    margin-bottom: 20px;
+}
