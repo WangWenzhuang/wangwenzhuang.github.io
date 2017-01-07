@@ -95,11 +95,11 @@ body{
 .index-box-item a:hover{
     color: #fc0;
 }
-.index-box-item time{
+.index-box-ite-time{
     color: #8e8e8e; 
 }
 @media (max-width:768px){
-    .index-box-item time{
+    .index-box-ite-time{
         display: none;
     }
 }
