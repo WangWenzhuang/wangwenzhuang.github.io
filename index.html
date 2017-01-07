@@ -24,9 +24,9 @@ layout: page
 			&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;
 
 			{% if paginator.next_page %}
-				<a href="/page{{ paginator.next_page }}" class="index-box-paginator-nav">下一页&gt;&gt;</a>&nbsp;&nbsp;
+				<a href="/page{{ paginator.next_page }}" class="index-box-paginator-nav">下一页&nbsp;<span class="fa fa-chevron-circle-right"></span></a>&nbsp;&nbsp;
 			{% else %}
-				<span class="index-box-paginator-disable">下一页&gt;&gt;</span>
+				<span>下一页&nbsp;<span class="fa fa-chevron-circle-right"></span></span>
 			{% endif %}
 		</div>
 	</div>
