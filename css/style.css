@@ -42,7 +42,7 @@ body{
 }
 
 .menu ul li a:hover{
-    color: #990033;
+    color: #fc0;
 }
 
 .footer{
@@ -76,7 +76,7 @@ body{
 }
 .page-line a:hover{
     color: #ddd;
-    color: #990033;
+    color: #fc0;
 }
 .page-line time{
     color: #AAAAAA; 
@@ -115,7 +115,7 @@ body{
 	color: #666666;
 }
 .post-time-line-categories{
-	color: #990033;
+	color: #fc0;
 }
 .post-content{
 	margin-top: 15px;
