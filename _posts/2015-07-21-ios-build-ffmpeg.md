@@ -11,7 +11,7 @@ published: true
 
 *	下载 gas-preprocessor：[https://github.com/libav/gas-preprocessor](https://github.com/libav/gas-preprocessor)
 
-*	复制**gas-preprocessor.pl**到/usr/sbin下
+*	复制 **gas-preprocessor.pl** 到/usr/sbin下
 
 *	修改文件权限：chmod 777 /usr/sbin/gas-preprocessor.pl
 

@@ -27,7 +27,7 @@ ZKAlertView 封装了 UIAlertView，简单易用，Block 回调，丢掉各种 t
 
 ## 使用 ##
 
-*#import "ZKAlertView.h"*
+#import "ZKAlertView.h"
 
 <pre><code class="language-objectivec">    [ZKAlertView
       showAlertWithTitle:@"ZKAlertView"

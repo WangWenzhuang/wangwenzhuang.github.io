@@ -15,15 +15,15 @@ published: true
 
 ## 代码 ##
 
-实现`DZNEmptyDataSetSource`、`DZNEmptyDataSetDelegate`两个协议
+实现 **DZNEmptyDataSetSource**、**DZNEmptyDataSetDelegate** 两个协议
 
-*设置代理*
+设置代理
 
 <pre><code class="language-swift">self.tableView.emptyDataSetSource = self
 self.tableView.emptyDataSetDelegate = self
 </code></pre>
 
-*实现*
+实现
 
 <pre><code class="language-swift">func emptyDataSetShouldDisplay(scrollView: UIScrollView!) -> Bool {
 	// 数据为空时是否显示

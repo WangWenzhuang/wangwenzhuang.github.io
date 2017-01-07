@@ -17,7 +17,7 @@ published: true
 
 ## 代码 ##
 
-*Get 请求*
+Get 请求
 
 <pre><code class="language-swift">let manager = AFHTTPSessionManager()
 manager.GET(url, parameters: parameters, progress: nil, success: { (task, responseObject) in
@@ -29,7 +29,7 @@ manager.GET(url, parameters: parameters, progress: nil, success: { (task, respon
 }
 </code></pre>
 
-*Post 请求*
+Post 请求
 
 <pre><code class="language-swift">let manager = AFHTTPSessionManager()
 manager.POST(url, parameters: parameters, progress: nil, success: { (task, responseObject) in
@@ -41,7 +41,7 @@ manager.POST(url, parameters: parameters, progress: nil, success: { (task, respo
 })
 </code></pre>
 
-*监听网络环境*
+监听网络环境
 
 <pre><code class="language-swift">AFNetworkReachabilityManager.sharedManager().startMonitoring()
 AFNetworkReachabilityManager.sharedManager().setReachabilityStatusChangeBlock { (status) in
@@ -58,7 +58,7 @@ AFNetworkReachabilityManager.sharedManager().setReachabilityStatusChangeBlock { 
 }
 </code></pre>
 
-*判断是否有网络连接*
+判断是否有网络连接
 
 <pre><code class="language-swift">AFNetworkReachabilityManager.sharedManager().reachable
 </code></pre>

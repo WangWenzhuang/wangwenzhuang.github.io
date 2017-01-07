@@ -15,17 +15,17 @@ published: true
 
 ## 代码 ##
 
-*指定数据库*
+指定数据库
 
 <pre><code class="language-swift">let db = FMDatabase(path: "路径")
 </code></pre>
 
-*打开数据库*
+打开数据库
 
 <pre><code class="language-swift">db.open()
 </code></pre>
 
-*更新数据*
+更新数据
 
 >   insert、update、delete...等语句统一属于更新操作（executeUpdate）
 
@@ -39,7 +39,7 @@ db.executeUpdate("UPDATE [NewsCategory] SET [value]='最热资讯' WHERE WHERE [
 db.executeUpdate("DELETE FROM [NewsCategory]", withArgumentsInArray: nil)
 </code></pre>
 
-*查询数据*
+查询数据
 
 <pre><code class="language-swift">let result = db.executeQuery("select * from [NewsCategory] order by [sort]", withArgumentsInArray: nil)
 while result.next() {
@@ -48,12 +48,12 @@ while result.next() {
 }
 </code></pre>
 
-*关闭数据库*
+关闭数据库
 
 <pre><code class="language-swift">db.close()
 </code></pre>
 
-*扩展*
+扩展
 
 <pre><code class="language-swift">import FMDB
 extension FMDatabase {

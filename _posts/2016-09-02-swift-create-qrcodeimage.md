@@ -17,7 +17,7 @@ published: true
 
 ## 代码 ##
 
-*核心代码*
+核心代码
 
 <pre><code class="language-swift">func createQRCodeImage(text: String, width: CGFloat) -> UIImage {
     let filter = CIFilter(name: "CIQRCodeGenerator")
