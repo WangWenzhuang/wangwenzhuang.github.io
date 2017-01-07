@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container">
-	<div class="post-title">{{ page.title }}</div>
+	<div class="post-title"><span class="fa fa-bookmark"></span>&nbsp;{{ page.title }}</div>
 	<div class="post-time">
 		<span class="fa fa-calendar"></span>&nbsp;<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
 	</div>
