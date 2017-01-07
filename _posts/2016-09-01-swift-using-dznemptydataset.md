@@ -7,13 +7,13 @@ tags: ["Swfit","DZNEmptyDataSet"]
 published: true
 ---
 
-#### 环境 ####
+# 环境 #
 
 *	使用 Swift 2.3
 
 *	DZNEmptyDataSet 1.8.1，[DZNEmptyDataSet - GitHub](https://github.com/dzenbot/DZNEmptyDataSet)
 
-#### 代码 ####
+# 代码 #
 
 实现`DZNEmptyDataSetSource`、`DZNEmptyDataSetDelegate`两个协议
 

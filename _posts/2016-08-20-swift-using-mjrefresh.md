@@ -7,13 +7,13 @@ tags: ["Swfit","MJRefresh"]
 published: true
 ---
 
-#### 环境 ####
+# 环境 #
 
 *	使用 Swift 2.3
 
 *	MJRefresh 3.1.12，[MJRefresh - GitHub](https://github.com/CoderMJLee/MJRefresh)
 
-#### 代码 ####
+# 代码 #
 
 <pre><code class="language-swift">let header = MJRefreshNormalHeader()
 header.setRefreshingTarget(self, refreshingAction: Selector("headerRefresh"))

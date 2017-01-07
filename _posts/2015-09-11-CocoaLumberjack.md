@@ -7,7 +7,7 @@ tags: ["XcodeColors","CocoaLumberjack"]
 published: true
 ---
 
-#### 安装 XcodeColors ####
+# 安装 XcodeColors #
 
 *	[XcodeColors - GitHub](https://github.com/robbiehanson/XcodeColors)
 
@@ -19,7 +19,7 @@ published: true
 
 	<pre><code class="language-objectivec">setenv("XcodeColors", "YES", 0);</code></pre>
 
-####  CocoaLumberjack ####
+#  CocoaLumberjack #
 
 *	[CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
