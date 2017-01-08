@@ -17,7 +17,7 @@ published: true
 
 ## 代码
 
-#### 公用的生成签名类
+公用的生成签名类
 
 <pre><code class="language-csharp">public sealed class SignatureHelper
 {
@@ -81,7 +81,7 @@ published: true
     }
 }</code></pre>
 
-#### 接口定义
+接口定义
 
 <pre><code class="language-csharp">/*
  * signature：签名结果
@@ -138,7 +138,7 @@ private bool CheckTimeOut(string timestamp)
     return result;
 }</code></pre>
 
-#### 请求
+请求
 
 <pre><code class="language-csharp">public static string TestGetData()
 {
