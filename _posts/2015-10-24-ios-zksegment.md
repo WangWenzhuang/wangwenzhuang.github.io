@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "ZKSegment 功能强大的分段选择控件"
-description: "ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大"
-category: 技术
-tags: ["ZKSegment"]
+title: "[iOS]ZKSegment 功能强大的分段选择控件"
+description: ""
+category: iOS 开发
+tags: ["iOS","ZKSegment"]
 published: true
 ---
 
 ## ZKSegment
 
-ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
+> ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 
-[ZKSegment - GitHub](https://github.com/WangWenzhuang/ZKSegment)
+> [ZKSegment - GitHub](https://github.com/WangWenzhuang/ZKSegment)
 
 <img src="/images/post/2015-10-24-zksegment/1.png" style="width:320px;height:480px;" />
 
@@ -25,9 +25,7 @@ ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 
 ## 快速使用
 
-<pre><code class="language-objectivec">_ZKSegment = [ZKSegment
-    zk_segmentWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45)
-                  style:ZKSegmentLineStyle];
+<pre><code class="language-objectivec">_ZKSegment = [ZKSegment zk_segmentWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45) style:ZKSegmentLineStyle];
 _ZKSegment.zk_itemClickBlock=^(NSString *itemName , NSInteger itemIndex){
     NSLog(@"click item:%@",itemName);
     NSLog(@"click itemIndex:%d",itemIndex);

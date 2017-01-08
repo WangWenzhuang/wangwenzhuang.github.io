@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "使用 CocoaPods"
+title: "[iOS]使用 CocoaPods"
 description: ""
-category: iOS
+category: iOS 开发
 tags: ["iOS","CocoaPods"]
 published: true
 ---

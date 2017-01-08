@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "iOS 编译 FFmpeg"
-description: "iOS 下完美编译 FFmpeg"
-category: iOS
-tags: ["FFmpeg"]
+title: "[iOS]编译 FFmpeg"
+description: "下完美编译 FFmpeg"
+category: iOS 开发
+tags: ["iOS","FFmpeg"]
 published: true
 ---
 

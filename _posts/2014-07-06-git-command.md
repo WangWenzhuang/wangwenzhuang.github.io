@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git 常用命令"
-description: "git 简单配置和 git 的常用命令。用于随时查阅。。。"
+description: ""
 category: Git
 tags: ["Git"]
 published: true
