@@ -27,7 +27,7 @@ published: true
 
 更新数据
 
->   insert、update、delete...等语句统一属于更新操作（executeUpdate）
+> insert、update、delete...等语句统一属于更新操作（executeUpdate）
 
 <pre><code class="language-swift">// 创建表
 db.executeUpdate("CREATE TABLE NewsCategory([key] varchar(32),[sort] integer,[value] varchar(500),[type] varchar(30),isFixed integer,isCme integer);", withArgumentsInArray: nil)
