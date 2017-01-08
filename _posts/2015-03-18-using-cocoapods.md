@@ -15,13 +15,13 @@ CocoaPods 就是为了解决这些麻烦的事情的，使用 CocoaPods 只需�
 
 ## 准备工作 ##
 
-祖国的大局域网是安装不成功的，需要替换 ruby 的源更新为淘宝源：
+祖国的大局域网是安装不成功的，需要替换 ruby 的源：
 
 <pre><code class="language-bash">gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a http://gems.ruby-china.org/
 gem sources -l</code></pre>
 
-输出：http://ruby.taobao.org/就代表替换成功
+输出：http://gems.ruby-china.org/就代表替换成功
 
 ## CocoaPods 安装 ##
 
@@ -36,13 +36,16 @@ pod setup</code></pre>
 
 <pre><code class="language-bash">source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Artsy/Specs.git'
-inhibit_all_warnings!
 
 platform :ios, '7.0'
-pod 'SVProgressHUD'
-pod 'CocoaLumberjack'
-pod 'AFNetworking', '~> 2.0'
-pod 'SDWebImage'</code></pre>
+inhibit_all_warnings!
+
+target 'targetName' do
+	pod 'SVProgressHUD'
+	pod 'CocoaLumberjack'
+	pod 'AFNetworking'
+	pod 'SDWebImage'
+end</code></pre>
 
 Podfile 文件的具体用法点这里[CocoaPods Guides - The Podfile](http://guides.cocoapods.org/using/the-podfile.html)
 
