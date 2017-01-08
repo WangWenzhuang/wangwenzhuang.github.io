@@ -2,15 +2,14 @@
 layout: post
 title: "微信公众号开发 SDK"
 description: ""
-category: Web
-tags: ["C#"]
+category: 技术
+tags: ["C#","微信"]
 published: true
 ---
 
 ## 说明
 
 > 开发语言是 C#，大部分功能已经实现，简单易用。
-
 > [WeiXin - GitHub](https://github.com/WangWenzhuang/WeiXin)
 
 ## 快速使用

@@ -2,7 +2,7 @@
 layout: post
 title: "Git 常用命令"
 description: ""
-category: Git
+category: 技术
 tags: ["Git"]
 published: true
 ---
