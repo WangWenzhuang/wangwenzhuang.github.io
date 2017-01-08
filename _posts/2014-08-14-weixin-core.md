@@ -3,7 +3,7 @@ layout: post
 title: "微信公众号开发 SDK"
 description: "开发语言是 C#，大部分功能已经实现，简单易用。如果需要看实现功能，可以扫描下面二维码，关注测试帐号。"
 category: 技术
-tags: ["微信公众号开发"]
+tags: []
 published: true
 ---
 
