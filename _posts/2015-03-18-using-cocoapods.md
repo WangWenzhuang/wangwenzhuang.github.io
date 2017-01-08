@@ -2,7 +2,7 @@
 layout: post
 title: "使用 CocoaPods"
 description: ""
-category: 技术
+category: iOS
 tags: ["iOS","CocoaPods"]
 published: true
 ---

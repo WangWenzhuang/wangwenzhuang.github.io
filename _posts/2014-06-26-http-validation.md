@@ -2,7 +2,7 @@
 layout: post
 title: "HTTP GET 方法的简单访问效验"
 description: "自定义一套签名算法，接口和请求者使用签名算法一致，并使用一致的 token。请求接口时将签名结果作为必要参数，接口收到请求效验签名合法性。"
-category: 技术
+category: Web
 tags: ["C#","HTTP"]
 published: true
 ---

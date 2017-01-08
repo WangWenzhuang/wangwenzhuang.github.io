@@ -2,7 +2,7 @@
 layout: post
 title: "iOS 编译 FFmpeg"
 description: "iOS 下完美编译 FFmpeg"
-category: 技术
+category: iOS
 tags: ["FFmpeg"]
 published: true
 ---
