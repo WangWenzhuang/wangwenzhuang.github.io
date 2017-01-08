@@ -103,6 +103,9 @@ a:visited{
 .index-item a{
     font-weight: bold;
 }
+.index-item a span{
+    color: #fc0;
+}
 .index-item-time{
     color: #8e8e8e; 
 }

@@ -2,7 +2,7 @@
 layout: post
 title: "微信公众号开发 SDK"
 description: ""
-category: Web 开发
+category: Web
 tags: ["C#"]
 published: true
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[ iOS ] 完美编译 FFmpeg"
+title: "完美编译 FFmpeg"
 description: ""
-category: iOS 开发
+category: iOS
 tags: ["iOS","FFmpeg"]
 published: true
 ---

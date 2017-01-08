@@ -2,7 +2,7 @@
 layout: post
 title: "HTTP GET 方法的简单访问效验"
 description: ""
-category: Web 开发
+category: Web
 tags: ["C#","HTTP"]
 published: true
 ---

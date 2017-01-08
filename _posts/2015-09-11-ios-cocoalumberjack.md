@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[ iOS ] 使用 CocoaLumberjack 打印日志"
+title: "使用 CocoaLumberjack 打印日志"
 description: ""
-category: iOS 开发
+category: iOS
 tags: ["iOS","CocoaLumberjack"]
 published: true
 ---

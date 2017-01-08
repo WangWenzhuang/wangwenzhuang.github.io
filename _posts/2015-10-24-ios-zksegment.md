@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[ iOS ] ZKSegment 功能强大的分段选择控件"
+title: "ZKSegment 功能强大的分段选择控件"
 description: ""
-category: iOS 开发
+category: iOS
 tags: ["iOS","ZKSegment"]
 published: true
 ---
