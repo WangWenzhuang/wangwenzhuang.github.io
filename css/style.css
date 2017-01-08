@@ -22,13 +22,9 @@ a{
 a:hover{
     text-decoration: none;
     color: #fc0;
-}
-a:active:{
-    color: #CC3366; 
-}   
+} 
 a:visited{
     color: #CC3366;
-    text-decoration:none;
 }
 .menu{
     padding-right: 15px;
@@ -57,6 +53,9 @@ a:visited{
     font-size: 1em;
     font-weight: bold;
     
+}
+.menu ul li a:visited{
+    color: #ddd;
 }
 @media (min-width:768px){
     .menu ul li a{
@@ -116,6 +115,10 @@ a:visited{
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+.index-pagination a:hover{
+    text-decoration: none;
+    color: #fc0;
 }
 .index-pagination-disabled{
     color: #8e8e8e;
