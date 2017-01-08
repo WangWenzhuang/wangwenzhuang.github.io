@@ -23,6 +23,13 @@ a:hover{
     text-decoration: none;
     color: #fc0;
 }
+a:active:{
+    color: #CC3366; 
+}   
+a:visited{
+    color: #CC3366;
+    text-decoration:none;
+}
 .menu{
     padding-right: 15px;
     padding-left: 15px;
