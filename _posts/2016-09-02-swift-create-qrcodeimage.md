@@ -7,15 +7,15 @@ tags: ["Swfit","二维码"]
 published: true
 ---
 
-## 效果图 ##
+## 效果图
 
 <img src="/images/post/2016-09-02-swift-create-qrcodeimage/IMG_3229.PNG" style="width:320px;height:569px;" />
 
-## 环境 ##
+## 环境
 
 *	使用 Swift 2.3
 
-## 代码 ##
+## 代码
 
 核心代码
 

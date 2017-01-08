@@ -17,7 +17,7 @@ published: true
 
 1、实现 IWeiXinService 接口
 
-```// 首先实现 IWeiXinService 接口
+<pre><code class="language-csharp">// 首先实现 IWeiXinService 接口
 public class ProcessMessage : IWeiXinService
 {
     /// <summary>
@@ -69,7 +69,7 @@ public class ProcessMessage : IWeiXinService
         }
         return result;
     }
-}```
+}</code></pre>
 
 2、注册实现的接口
 

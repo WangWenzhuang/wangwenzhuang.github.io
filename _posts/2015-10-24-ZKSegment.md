@@ -7,7 +7,7 @@ tags: ["ZKSegment"]
 published: true
 ---
 
-## ZKSegment ##
+## ZKSegment
 
 ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 
@@ -19,11 +19,11 @@ ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 
 <img src="/images/post/2015-10-24-zksegment/3.png" style="width:320px;height:480px;" />
 
-## 安装 ##
+## 安装
 
 <pre><code class="language-bash">CocoaPods：pod 'ZKSegment'</code></pre>
 
-## 快速使用 ##
+## 快速使用
 
 <pre><code class="language-objectivec">_ZKSegment = [ZKSegment
     zk_segmentWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45)
@@ -36,7 +36,7 @@ _ZKSegment.zk_itemClickBlock=^(NSString *itemName , NSInteger itemIndex){
 
 [self.view addSubview:_ZKSegment];</code></pre>
 
-## 自定义 ##
+## 自定义
 
 <pre><code class="language-objectivec">zk_itemDefaultColor				\\设置每一项文本默认颜色
 
@@ -46,7 +46,7 @@ zk_itemStyleSelectedColor		\\选中项样式颜色
 
 zk_backgroundColor				\\背景色</code></pre>
 
-## 运行环境 ##
+## 运行环境
 
 *	iOS 7+
 *	支持 armv7/armv7s/arm64

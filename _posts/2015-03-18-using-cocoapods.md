@@ -7,13 +7,13 @@ tags: ["CocoaPods"]
 published: true
 ---
 
-## CocoaPods 简介 ##
+## CocoaPods 简介
 
 在做 iOS 开发时我们总会用到各种第三方开源库，使用的时候都是通过下载源码，引入到工程，向工程添加开源库使用到的 Framework，如果开源库有更新的时候，还需要删除引入的旧代码，在重新引入最新代码到工程。
 
 CocoaPods 就是为了解决这些麻烦的事情的，使用 CocoaPods 只需简单的配置一下就 OK 了。
 
-## 准备工作 ##
+## 准备工作
 
 祖国的大局域网是安装不成功的，需要替换 ruby 的源：
 
@@ -23,14 +23,14 @@ gem sources -l</code></pre>
 
 输出：http://gems.ruby-china.org/就代表替换成功
 
-## CocoaPods 安装 ##
+## CocoaPods 安装
 
 <pre><code class="language-bash">sudo gem install cocoapods
 pod setup</code></pre>
 
 等待安装成功。
 
-## CocoaPods 使用 ##
+## CocoaPods 使用
 
 进入工程目录，创建 Podfile 文件，下面是一个例子：
 
@@ -57,7 +57,7 @@ Terminal 进入到工程目录，输入如下代码：
 
 <pre><code class="language-bash">pod update</code></pre>
 
-## 可能出现的问题 ##
+## 可能出现的问题
 
 *	`Undefined symbols for architecture x86_64:`
 

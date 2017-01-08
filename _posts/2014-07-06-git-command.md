@@ -7,7 +7,7 @@ tags: ["Git"]
 published: true
 ---
 
-## 初次运行的配置 ##
+## 初次运行的配置
 
 设置用户信息
 
@@ -26,7 +26,7 @@ git config --global user.email "1020304029@qq.com"</code></pre>
 
 <pre><code class="language-bash">ssh-keygen</code></pre>
 
-## 常用命令 ##
+## 常用命令
 
 从远程仓库克隆
 
@@ -73,7 +73,7 @@ git remote -v</code></pre>
 
 <pre><code class="language-bash">git push</code></pre>
 
-## 获取帮助 ##
+## 获取帮助
 
 <pre><code class="language-bash">git help <verb></code></pre>
 
