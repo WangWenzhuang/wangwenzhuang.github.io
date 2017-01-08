@@ -29,7 +29,7 @@ make
 
 sudo make install</code></pre>
 
-可以到[http://www.tortall.net/projects/yasm/releases](http://www.tortall.net/projects/yasm/releases)查看最新版本 ，将 **yasm-1.2.0.tar.gz** 替换即可
+可以到 [http://www.tortall.net/projects/yasm/releases](http://www.tortall.net/projects/yasm/releases) 查看最新版本 ，将 **yasm-1.2.0.tar.gz** 替换即可
 
 ## 下载 FFmpeg-iOS-build-script（编译脚本）
 
@@ -42,15 +42,15 @@ sudo make install</code></pre>
 *	执行完上述命令，在 **FFmpeg-iOS-build-script** 文件夹下会生成 **FFmpeg-iOS** 文件夹，进入 **FFmpeg-iOS** 文件夹查看支持架构：lipo -info libavcodec.a
 
 ## 使用 FFmpeg
-*	需要引入的库：libz.dylib、libbz2.dylib、libiconv.dylib
+*	需要引入的库：**libz.dylib**、**libbz2.dylib**、**libiconv.dylib**
 
 *	将 **FFmpeg-iOS** 拖入到工程
 
-*	设置 **Library Search Paths** 为“$(PROJECT_DIR)/项目名称/FFmpeg-iOS/lib    non-recursive”
+*	设置 **Library Search Paths** 为 “**$(PROJECT_DIR)/项目名称/FFmpeg-iOS/lib non-recursive**”
 
-*	设置 **Header Search Paths** 为“$(PROJECT_DIR)/项目名称/FFmpeg-iOS/include    non-recursive”
+*	设置 **Header Search Paths** 为 “**$(PROJECT_DIR)/项目名称/FFmpeg-iOS/include non-recursive**”
 
-*	设置 **Always Search User Paths** 为“NO”
+*	设置 **Always Search User Paths** 为 “**NO**”
 
 ## 事例下载
 
