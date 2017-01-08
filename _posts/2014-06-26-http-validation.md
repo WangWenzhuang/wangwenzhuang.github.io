@@ -18,7 +18,6 @@ published: true
 ## 代码
 
 1. 公用的生成签名类
-
 <pre><code class="language-csharp">public sealed class SignatureHelper
 {
     /*
@@ -82,7 +81,6 @@ published: true
 }</code></pre>
 
 2. 接口定义
-
 <pre><code class="language-csharp">/*
  * signature：签名结果
  * timestamp：时间戳
@@ -139,7 +137,6 @@ private bool CheckTimeOut(string timestamp)
 }</code></pre>
 
 3. 请求
-
 <pre><code class="language-csharp">public static string TestGetData()
 {
     var timestamp = SignatureHelper.CreateTimestamp();
