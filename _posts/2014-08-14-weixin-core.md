@@ -14,7 +14,7 @@ published: true
 
 ## 快速使用
 
-1、实现 IWeiXinService 接口
+实现 IWeiXinService 接口
 
 <pre><code class="language-csharp">// 首先实现 IWeiXinService 接口
 public class ProcessMessage : IWeiXinService
@@ -70,10 +70,10 @@ public class ProcessMessage : IWeiXinService
     }
 }</code></pre>
 
-2、注册实现的接口
+注册实现的接口
 
 <pre><code class="language-csharp">WeiXinService.Register(_Service, appid, appsecret);</code></pre>
 
-3、处理微信服务器发来的 xml
+处理微信服务器发来的 xml
 
 <pre><code class="language-csharp">WeiXinService.ProcessMessage(xml);</code></pre>
