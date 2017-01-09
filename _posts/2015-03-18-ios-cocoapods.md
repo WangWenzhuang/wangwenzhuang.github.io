@@ -80,7 +80,7 @@ pod update
 
 	解决办法：
 
-	```bash
-	sudo gem install -n /usr/local/bin cocoapods
-	```
+		```bash
+		sudo gem install -n /usr/local/bin cocoapods
+		```
 
