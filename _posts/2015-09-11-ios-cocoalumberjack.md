@@ -17,23 +17,23 @@ published: true
 
 ## 快速使用
 
-* **CocoaLumberjack** 引入项目
+**CocoaLumberjack** 引入项目
 
-	```bash
-	CocoaPods：pod 'CocoaLumberjack'
-	```
-* 在 **application(_:didFinishLaunchingWithOptions:)** 中添加
+```bash
+CocoaPods：pod 'CocoaLumberjack'
+```
+在 **application(_:didFinishLaunchingWithOptions:)** 中添加
 
-	```swift
-	DDLog.add(DDTTYLogger.sharedInstance(), with: DDLogLevel.verbose)
-	```
+```swift
+DDLog.add(DDTTYLogger.sharedInstance(), with: DDLogLevel.verbose)
+```
 
-* 打印到控制台
+打印到控制台
 	
-	```swift
-	DDLogDebug("Debug")
-    DDLogError("Error")
-    DDLogWarn("Warning")
-    DDLogInfo("Info")
-    DDLogVerbose("Verbose")
-	```
+```swift
+DDLogDebug("Debug")
+DDLogError("Error")
+DDLogWarn("Warning")
+DDLogInfo("Info")
+DDLogVerbose("Verbose")
+```
