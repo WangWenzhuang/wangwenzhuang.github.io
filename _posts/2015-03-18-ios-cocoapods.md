@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用 CocoaPods 管理依赖库"
+title: "[ iOS ] 使用 CocoaPods 管理依赖库"
 description: ""
 category: iOS
 tags: ["CocoaPods"]
