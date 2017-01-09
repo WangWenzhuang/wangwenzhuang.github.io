@@ -79,4 +79,4 @@ pod update
 
 	解决办法：
 		
-		sudo gem install -n /usr/local/bin cocoapods
+	sudo gem install -n /usr/local/bin cocoapods
