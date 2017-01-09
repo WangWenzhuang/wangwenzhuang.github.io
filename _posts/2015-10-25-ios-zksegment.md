@@ -55,5 +55,5 @@ zk_backgroundColor
 
 ## 运行环境
 
-*	iOS 7+
-*	支持 armv7/armv7s/arm64
+* iOS 7+
+* 支持 armv7/armv7s/arm64

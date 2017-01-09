@@ -7,38 +7,33 @@ tags: ["CocoaLumberjack"]
 published: true
 ---
 
-##  CocoaLumberjack
+## 环境
 
-*	[CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
+* Swift 3.0.2
 
-*	将 **CocoaLumberjack** 引入项目
+* Xcode 8.2.1
 
-*	在 **xxx.pch** 文件中定义日志级别
+* [CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
-	```objc
-	#ifdef DEBUG
-	static const int ddLogLevel = DDLogLevelVerbose;
-	#else
-	static const int ddLogLevel = DDLogLevelError;
-	#endif
+## 快速使用
+
+* **CocoaLumberjack** 引入项目
+
+	```bash
+	CocoaPods：pod 'CocoaLumberjack'
+	```
+* 在 **application(_:didFinishLaunchingWithOptions:)** 中添加
+
+	```swift
+	DDLog.add(DDTTYLogger.sharedInstance(), with: DDLogLevel.verbose)
 	```
 
-*	在 **- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions** 中添加
-
-	```objc
-	[DDLog addLogger:[DDTTYLogger sharedInstance]];
-	// 允许颜色
-    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
-    // 自定义日志颜色，这里更改默认 Debug 颜色
-    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor: [UIColor whiteColor] forFlag:DDLogFlagDebug];
-	```
-
-*	打印到控制台
+* 打印到控制台
 	
-	```objc
-	DDLogDebug(@"Debug");
-    DDLogError(@"Error");
-    DDLogWarn(@"Warning");
-    DDLogInfo(@"Info");
-    DDLogVerbose(@"Verbose");
+	```swift
+	DDLogDebug("Debug")
+    DDLogError("Error")
+    DDLogWarn("Warning")
+    DDLogInfo("Info")
+    DDLogVerbose("Verbose")
 	```

@@ -9,11 +9,11 @@ published: true
 
 ## 下载 gas-preprocessor
 
-*	下载 gas-preprocessor：[https://github.com/libav/gas-preprocessor](https://github.com/libav/gas-preprocessor)
+* 下载 gas-preprocessor：[https://github.com/libav/gas-preprocessor](https://github.com/libav/gas-preprocessor)
 
-*	复制 **gas-preprocessor.pl** 到 **/usr/sbin** 下
+* 复制 **gas-preprocessor.pl** 到 **/usr/sbin** 下
 
-*	修改文件权限：chmod 777 /usr/sbin/gas-preprocessor.pl
+* 修改文件权限：chmod 777 /usr/sbin/gas-preprocessor.pl
 
 ## 安装 yasm
 
@@ -35,24 +35,24 @@ sudo make install
 
 ## 下载 FFmpeg-iOS-build-script（编译脚本）
 
-*	下载 FFmpeg-iOS-build-script：[https://github.com/kewlbear/FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script)
+* 下载 FFmpeg-iOS-build-script：[https://github.com/kewlbear/FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script)
 
-*	执行 **./build-ffmpeg.sh**（编译所有版本）
+* 执行 **./build-ffmpeg.sh**（编译所有版本）
 
-*	上条语句执行完毕执行 **./build-ffmpeg.sh lipo**（将所有架构.a文件合并）
+* 上条语句执行完毕执行 **./build-ffmpeg.sh lipo**（将所有架构.a文件合并）
 
-*	执行完上述命令，在 **FFmpeg-iOS-build-script** 文件夹下会生成 **FFmpeg-iOS** 文件夹，进入 **FFmpeg-iOS** 文件夹查看支持架构：**lipo -info libavcodec.a**
+* 执行完上述命令，在 **FFmpeg-iOS-build-script** 文件夹下会生成 **FFmpeg-iOS** 文件夹，进入 **FFmpeg-iOS** 文件夹查看支持架构：**lipo -info libavcodec.a**
 
 ## 使用 FFmpeg
-*	需要引入的库：**libz.dylib**、**libbz2.dylib**、**libiconv.dylib**
+* 需要引入的库：**libz.dylib**、**libbz2.dylib**、**libiconv.dylib**
 
-*	将 **FFmpeg-iOS** 拖入到工程
+* 将 **FFmpeg-iOS** 拖入到工程
 
-*	设置 **Library Search Paths** 为 “**$(PROJECT_DIR)/项目名称/FFmpeg-iOS/lib non-recursive**”
+* 设置 **Library Search Paths** 为 “**$(PROJECT_DIR)/项目名称/FFmpeg-iOS/lib non-recursive**”
 
-*	设置 **Header Search Paths** 为 “**$(PROJECT_DIR)/项目名称/FFmpeg-iOS/include non-recursive**”
+* 设置 **Header Search Paths** 为 “**$(PROJECT_DIR)/项目名称/FFmpeg-iOS/include non-recursive**”
 
-*	设置 **Always Search User Paths** 为 “**NO**”
+* 设置 **Always Search User Paths** 为 “**NO**”
 
 ## 事例下载
 

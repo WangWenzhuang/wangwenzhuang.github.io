@@ -68,13 +68,13 @@ pod update
 
 ## 可能出现的问题
 
-*	`Undefined symbols for architecture x86_64:`
+* `Undefined symbols for architecture x86_64:`
 
 	解决办法：
 
 	修改 **Other Linker Flags**，增加 **$(inherited)**
 
-*	`ERROR:  While executing gem ... (Errno::EPERM)
+* `ERROR:  While executing gem ... (Errno::EPERM)
     Operation not permitted - /usr/bin/xcodeproj`
 
 
