@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/plugins/jquery-3.1.1.min.js"></script>
     <script src="/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <!--<script src="/plugins/prism/prism.js"></script>-->
     <script>
         var _hmt = _hmt || [];
         (function() {

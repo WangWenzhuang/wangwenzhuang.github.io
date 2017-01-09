@@ -20,26 +20,28 @@ published: true
 
 实体类
 
-* UserModel.h
+UserModel.h
 
-    <pre><code class="language-objectivec">#import "ZKModel.h"
+```objc
+#import "ZKModel.h"
 
-    @interface UserModel : ZKModel&lt;ZKModelSerializing&gt;
-    /**
-    *  对应数据表字段id，对应json字段id
-    */
-    @property(nonatomic, copy) NSString *key;
-    /**
-    *  对应数据表字段name，对应json字段name
-    */
-    @property(nonatomic, copy) NSString *name;
-    /**
-    *  对应数据表字段age，对应json字段
-    */
-    @property(nonatomic, copy) NSNumber *age;
-    @end</code></pre>
+@interface UserModel : ZKModel&lt;ZKModelSerializing&gt;
+/**
+*  对应数据表字段id，对应json字段id
+*/
+@property(nonatomic, copy) NSString *key;
+/**
+*  对应数据表字段name，对应json字段name
+*/
+@property(nonatomic, copy) NSString *name;
+/**
+*  对应数据表字段age，对应json字段
+*/
+@property(nonatomic, copy) NSNumber *age;
+@end
+```
 
-* UserModel.m
+UserModel.m
 
 ```objc
 #import "UserModel.h"
@@ -64,7 +66,8 @@ published: true
 
 示例
 
-<pre><code class="language-objectivec">NSDictionary *userDic = @{ @"id" : @"1", @"name" : @"王文壮", @"age" : @30 };
+```objc
+NSDictionary *userDic = @{ @"id" : @"1", @"name" : @"王文壮", @"age" : @30 };
 // 将 NSDictionary 转换为 UserModel
 UserModel *user = [ZKModelAdapter modelOfClass:[UserModel class] fromDictionary:userDic];
 
@@ -88,7 +91,8 @@ json = [user toJSON];
 NSLog(@"Users JSON:%@", json);
 
 // 实体输出 NSDictionary
-userDic = [user dictionry];</code></pre>
+userDic = [user dictionry];
+```
 
 ## 运行环境
 
