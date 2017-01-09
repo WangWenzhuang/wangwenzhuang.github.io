@@ -15,24 +15,30 @@ published: true
 
 *	在 **xxx.pch** 文件中定义日志级别
 
-	<pre><code class="language-objectivec">#ifdef DEBUG
+	```objc
+	#ifdef DEBUG
 	static const int ddLogLevel = DDLogLevelVerbose;
 	#else
 	static const int ddLogLevel = DDLogLevelError;
-	#endif</code></pre>
+	#endif
+	```
 
 *	在 **- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions** 中添加
 
-	<pre><code class="language-objectivec">[DDLog addLogger:[DDTTYLogger sharedInstance]];
+	```objc
+	[DDLog addLogger:[DDTTYLogger sharedInstance]];
 	// 允许颜色
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
     // 自定义日志颜色，这里更改默认 Debug 颜色
-    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor: [UIColor whiteColor] forFlag:DDLogFlagDebug];</code></pre>
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor: [UIColor whiteColor] forFlag:DDLogFlagDebug];
+	```
 
 *	打印到控制台
 	
-	<pre><code class="language-objectivec">DDLogDebug(@"Debug");
+	```objc
+	DDLogDebug(@"Debug");
     DDLogError(@"Error");
     DDLogWarn(@"Warning");
     DDLogInfo(@"Info");
-    DDLogVerbose(@"Verbose");</code></pre>
+    DDLogVerbose(@"Verbose");
+	```
