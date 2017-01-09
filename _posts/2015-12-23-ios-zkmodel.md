@@ -41,7 +41,8 @@ published: true
 
 * UserModel.m
 
-    <pre><code class="language-objectivec">#import "UserModel.h"
+    ```
+    #import "UserModel.h"
 
     @implementation UserModel
 
@@ -58,7 +59,8 @@ published: true
                 @"age" : @"age"
                 };
     }
-    @end</code></pre>
+    @end
+    ```
 
 示例
 
