@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "微信公众号开发 SDK"
+title: "微信公众号开发 Sdk"
 description: ""
 category: 技术
 tags: ["C#","微信"]
