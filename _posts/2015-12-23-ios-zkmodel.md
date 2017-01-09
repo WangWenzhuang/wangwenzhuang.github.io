@@ -41,26 +41,26 @@ published: true
 
 * UserModel.m
 
-    ```objc
-    #import "UserModel.h"
+```objc
+#import "UserModel.h"
 
-    @implementation UserModel
+@implementation UserModel
 
-    + (NSString *)ZKDBTableName {
-        return @"User";
-    }
-    + (NSDictionary *)ZKDBPrimaryKeys {
-        return @{ @"key" : @"id" };
-    }
-    + (NSDictionary *)ZKPropertyKeys {
-        return @{
-                @"key" : @"id",
-                @"name" : @"name",
-                @"age" : @"age"
-                };
-    }
-    @end
-    ```
++ (NSString *)ZKDBTableName {
+    return @"User";
+}
++ (NSDictionary *)ZKDBPrimaryKeys {
+    return @{ @"key" : @"id" };
+}
++ (NSDictionary *)ZKPropertyKeys {
+    return @{
+            @"key" : @"id",
+            @"name" : @"name",
+            @"age" : @"age"
+            };
+}
+@end
+```
 
 示例
 
