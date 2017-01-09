@@ -1,16 +1,15 @@
 ---
 layout: post
 title: "ZKModel 功能强大的实体模型转换器"
-description: "ZKModel 是一个功能强大的实体模型转换器"
-category: 技术
+description: ""
+category: iOS
 tags: ["ZKModel"]
 published: true
 ---
 
 ## ZKModel
 
-ZKModel 是一个功能强大的实体模型转换器
-
+> ZKModel 是一个功能强大的实体模型转换器
 [ZKModel - GitHub](https://github.com/WangWenzhuang/ZKModel)
 
 ## 安装
@@ -19,9 +18,7 @@ ZKModel 是一个功能强大的实体模型转换器
 
 ## 使用
 
-实体类:
-
-UserModel.h
+实体类：**UserModel.h**
 
 <pre><code class="language-objectivec">#import "ZKModel.h"
 
@@ -40,7 +37,7 @@ UserModel.h
 @property(nonatomic, copy) NSNumber *age;
 @end</code></pre>
 
-UserModel.m
+**UserModel.m**
 
 <pre><code class="language-objectivec">#import "UserModel.h"
 

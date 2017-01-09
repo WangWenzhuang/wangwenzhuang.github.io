@@ -3,7 +3,7 @@ layout: post
 title: "ZKSegment 功能强大的分段选择控件"
 description: ""
 category: iOS
-tags: ["iOS","ZKSegment"]
+tags: ["ZKSegment"]
 published: true
 ---
 
