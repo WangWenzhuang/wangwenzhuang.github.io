@@ -20,28 +20,34 @@ published: true
 
 ## 安装
 
-<pre><code class="language-bash">CocoaPods：pod 'ZKSegment'</code></pre>
+```bash
+CocoaPods：pod 'ZKSegment'
+```
 
 ## 快速使用
 
-<pre><code class="language-objectivec">_ZKSegment = [ZKSegment zk_segmentWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45) style:ZKSegmentLineStyle];
+```objc
+_ZKSegment = [ZKSegment zk_segmentWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 45) style:ZKSegmentLineStyle];
 _ZKSegment.zk_itemClickBlock=^(NSString *itemName , NSInteger itemIndex){
     NSLog(@"click item:%@",itemName);
     NSLog(@"click itemIndex:%d",itemIndex);
 };
 [_ZKSegment zk_setItems:@[ @"菜单1", @"菜单2" ]];
 
-[self.view addSubview:_ZKSegment];</code></pre>
+[self.view addSubview:_ZKSegment];
+```
 
 ## 自定义
 
-<pre><code class="language-objectivec">zk_itemDefaultColor				\\设置每一项文本默认颜色
+```objc
+zk_itemDefaultColor			\\设置每一项文本默认颜色
 
-zk_itemStyleSelectedColor		\\设置每一项文本选中颜色
+zk_itemStyleSelectedColor	\\设置每一项文本选中颜色
 
-zk_itemStyleSelectedColor		\\选中项样式颜色
+zk_itemStyleSelectedColor	\\选中项样式颜色
 
-zk_backgroundColor				\\背景色</code></pre>
+zk_backgroundColor			\\背景色
+```
 
 ## 运行环境
 

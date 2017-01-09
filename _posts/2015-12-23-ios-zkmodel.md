@@ -14,7 +14,9 @@ published: true
 
 ## 安装
 
-<pre><code class="language-bash">CocoaPods：pod 'ZKModel'</code></pre>
+```bash
+CocoaPods：pod 'ZKModel'
+```
 
 ## 使用
 
