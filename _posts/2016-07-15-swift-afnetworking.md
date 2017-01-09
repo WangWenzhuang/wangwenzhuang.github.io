@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swift 使用 AFNetworking"
+title: "使用 AFNetworking"
 description: ""
 category: Swfit
 tags: ["AFNetworking"]
@@ -9,11 +9,13 @@ published: true
 
 ## 环境
 
-*	使用 Swift 2.3
+* Swift 3.0.2
 
-*	[AFNetworking - GitHub](https://github.com/AFNetworking/AFNetworking)
+* Xcode 8.2.1
 
-*	输出使用 [CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
+* [AFNetworking - GitHub](https://github.com/AFNetworking/AFNetworking)
+
+* 日志输出使用 [CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
 ## 代码
 
@@ -21,12 +23,12 @@ Get 请求
 
 ```swift
 let manager = AFHTTPSessionManager()
-manager.GET(url, parameters: parameters, progress: nil, success: { (task, responseObject) in
+manager.get("url", parameters: [ "key" : "value" ], progress: nil, success: { (task, responseObject) in
     if responseObject != nil {
         DDLogDebug(responseObject)
     }
 }) { (task, error) in
-    DDLogError((task!.currentRequest?.URL?.absoluteString)! + "  ******  error:\r" + error.description)
+    DDLogError((task!.currentRequest?.url?.absoluteString)! + "  ******  error:\r" + error.localizedDescription)
 }
 ```
 
@@ -34,29 +36,29 @@ Post 请求
 
 ```swift
 let manager = AFHTTPSessionManager()
-manager.POST(url, parameters: parameters, progress: nil, success: { (task, responseObject) in
+manager.post("url", parameters: [ "key" : "value" , progress: nil, success: { (task, responseObject) in
     if responseObject != nil {
         DDLogDebug(responseObject)
     }
 }, failure: { (task, error) in
-    DDLogError((task!.currentRequest?.URL?.absoluteString)! + "  ******  error:\r" + error.description)
+    DDLogError((task!.currentRequest?.url?.absoluteString)! + "  ******  error:\r" + error.localizedDescription)
 })
 ```
 
 监听网络环境
 
 ```swift
-AFNetworkReachabilityManager.sharedManager().startMonitoring()
-AFNetworkReachabilityManager.sharedManager().setReachabilityStatusChangeBlock { (status) in
+AFNetworkReachabilityManager.shared().startMonitoring()
+AFNetworkReachabilityManager.shared().setReachabilityStatusChange { (status) in
     switch status {
-    case .Unknown:
-        DDLogDebug("当前网络状态：Unknown")
-    case .NotReachable:
-        DDLogDebug("当前网络状态：NotReachable")
-    case .ReachableViaWWAN:
-        DDLogDebug("当前网络状态：ReachableViaWWAN")
-    case .ReachableViaWiFi:
-        DDLogDebug("当前网络状态：ReachableViaWiFi")
+    case .unknown:
+        DDLogVerbose("当前网络状态：Unknown")
+    case .notReachable:
+        DDLogVerbose("当前网络状态：NotReachable")
+    case .reachableViaWWAN:
+        DDLogVerbose("当前网络状态：ReachableViaWWAN")
+    case .reachableViaWiFi:
+        DDLogVerbose("当前网络状态：ReachableViaWiFi")
     }
 }
 ```
@@ -64,5 +66,5 @@ AFNetworkReachabilityManager.sharedManager().setReachabilityStatusChangeBlock { 
 判断是否有网络连接
 
 ```swift
-AFNetworkReachabilityManager.sharedManager().reachable
+AFNetworkReachabilityManager.shared().isReachable
 ```
