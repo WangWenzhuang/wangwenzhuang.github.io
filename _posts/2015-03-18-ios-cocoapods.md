@@ -3,7 +3,7 @@ layout: post
 title: "使用 CocoaPods 管理依赖库"
 description: ""
 category: iOS
-tags: ["iOS","CocoaPods"]
+tags: ["CocoaPods"]
 published: true
 ---
 
@@ -52,7 +52,7 @@ Terminal 进入到工程目录，输入如下代码：
 
 <pre><code class="language-bash">pod install</code></pre>
 
-等待完成。完成之后会生成 **.xcworkspace** 文件，在此之后打开工程使用此文件打开，而不是 **.xcodeproj** 以后每次更新 Podfile 文件只需执行
+等待完成。完成之后会生成 **.xcworkspace** 文件，在此之后打开工程使用此文件打开，而不是 **.xcodeproj** 以后每次更新只需执行
 
 <pre><code class="language-bash">pod update</code></pre>
 

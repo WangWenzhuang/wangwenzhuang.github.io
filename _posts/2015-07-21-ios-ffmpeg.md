@@ -3,7 +3,7 @@ layout: post
 title: "完美编译 FFmpeg"
 description: ""
 category: iOS
-tags: ["iOS","FFmpeg"]
+tags: ["FFmpeg"]
 published: true
 ---
 
@@ -11,7 +11,7 @@ published: true
 
 *	下载 gas-preprocessor：[https://github.com/libav/gas-preprocessor](https://github.com/libav/gas-preprocessor)
 
-*	复制 **gas-preprocessor.pl** 到/usr/sbin下
+*	复制 **gas-preprocessor.pl** 到 **/usr/sbin** 下
 
 *	修改文件权限：chmod 777 /usr/sbin/gas-preprocessor.pl
 
@@ -35,11 +35,11 @@ sudo make install</code></pre>
 
 *	下载 FFmpeg-iOS-build-script：[https://github.com/kewlbear/FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script)
 
-*	执行 ./build-ffmpeg.sh（编译所有版本）
+*	执行 **./build-ffmpeg.sh**（编译所有版本）
 
-*	上条语句执行完毕执行 ./build-ffmpeg.sh lipo（将所有架构.a文件合并）
+*	上条语句执行完毕执行 **./build-ffmpeg.sh lipo**（将所有架构.a文件合并）
 
-*	执行完上述命令，在 **FFmpeg-iOS-build-script** 文件夹下会生成 **FFmpeg-iOS** 文件夹，进入 **FFmpeg-iOS** 文件夹查看支持架构：lipo -info libavcodec.a
+*	执行完上述命令，在 **FFmpeg-iOS-build-script** 文件夹下会生成 **FFmpeg-iOS** 文件夹，进入 **FFmpeg-iOS** 文件夹查看支持架构：**lipo -info libavcodec.a**
 
 ## 使用 FFmpeg
 *	需要引入的库：**libz.dylib**、**libbz2.dylib**、**libiconv.dylib**
@@ -54,4 +54,4 @@ sudo make install</code></pre>
 
 ## 事例下载
 
-这里有份使用 FFMPEG 播放视频的代码：[https://github.com/kolyvan/kxmovie](https://github.com/kolyvan/kxmovie)
+这里有份使用 FFmpeg 播放视频的代码：[https://github.com/kolyvan/kxmovie](https://github.com/kolyvan/kxmovie)

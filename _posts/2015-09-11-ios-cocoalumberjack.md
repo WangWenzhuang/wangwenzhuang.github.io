@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "使用 CocoaLumberjack 打印日志"
+title: "使用 CocoaLumberjack 日志框架"
 description: ""
 category: iOS
-tags: ["iOS","CocoaLumberjack"]
+tags: ["CocoaLumberjack"]
 published: true
 ---
 
@@ -29,7 +29,7 @@ published: true
     // 自定义日志颜色，这里更改默认 Debug 颜色
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor: [UIColor whiteColor] forFlag:DDLogFlagDebug];</code></pre>
 
-*	使用打印方法
+*	打印到控制台
 	
 	<pre><code class="language-objectivec">DDLogDebug(@"Debug");
     DDLogError(@"Error");
