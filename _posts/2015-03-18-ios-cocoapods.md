@@ -77,10 +77,9 @@ pod update
 * `ERROR:  While executing gem ... (Errno::EPERM)
     Operation not permitted - /usr/bin/xcodeproj`
 
-
 	解决办法：
 
-		```bash
-		sudo gem install -n /usr/local/bin cocoapods
-		```
+	```bash
+	sudo gem install -n /usr/local/bin cocoapods
+	```
 
