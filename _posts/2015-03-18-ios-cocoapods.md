@@ -70,13 +70,9 @@ pod update
 
 * `Undefined symbols for architecture x86_64:`
 
-	解决办法：
-
-	修改 **Other Linker Flags**，增加 **$(inherited)**
+	解决办法：修改 **Other Linker Flags**，增加 **$(inherited)**
 
 * `ERROR:  While executing gem ... (Errno::EPERM)
     Operation not permitted - /usr/bin/xcodeproj`
 
-	解决办法：
-		
-	sudo gem install -n /usr/local/bin cocoapods
+	解决办法：**sudo gem install -n /usr/local/bin cocoapods**
