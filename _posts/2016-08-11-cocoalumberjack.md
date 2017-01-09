@@ -2,7 +2,7 @@
 layout: post
 title: "使用 CocoaLumberjack 日志框架"
 description: ""
-category: iOS
+category: Swift
 tags: ["CocoaLumberjack"]
 published: true
 ---
