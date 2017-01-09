@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Swift 使用 FMDB"
-description: "Swift 使用 FMDB"
-category: 技术
-tags: ["Swfit","FMDB"]
+title: "使用 FMDB"
+description: ""
+category: Swfit
+tags: ["FMDB"]
 published: true
 ---
 

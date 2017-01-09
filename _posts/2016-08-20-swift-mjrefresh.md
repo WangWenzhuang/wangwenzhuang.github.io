@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Swift 使用 MJRefresh"
-description: "Swift 使用 MJRefresh"
-category: 技术
-tags: ["Swfit","MJRefresh"]
+description: ""
+category: Swfit
+tags: ["MJRefresh"]
 published: true
 ---
 

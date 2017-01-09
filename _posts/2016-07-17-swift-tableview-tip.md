@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "UITableView 小技巧"
-description: "UITableView 小技巧"
-category: 技术
-tags: ["Swfit","UITableView"]
+description: ""
+category: Swift
+tags: ["UITableView"]
 published: true
 ---
 

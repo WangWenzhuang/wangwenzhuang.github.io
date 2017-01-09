@@ -40,13 +40,17 @@ _ZKSegment.zk_itemClickBlock=^(NSString *itemName , NSInteger itemIndex){
 ## 自定义
 
 ```objc
-zk_itemDefaultColor			\\设置每一项文本默认颜色
+\\设置每一项文本默认颜色
+zk_itemDefaultColor
 
-zk_itemStyleSelectedColor	\\设置每一项文本选中颜色
+\\设置每一项文本选中颜色
+zk_itemStyleSelectedColor
 
-zk_itemStyleSelectedColor	\\选中项样式颜色
+\\选中项样式颜色
+zk_itemStyleSelectedColor
 
-zk_backgroundColor			\\背景色
+\\背景色
+zk_backgroundColor
 ```
 
 ## 运行环境
