@@ -13,15 +13,10 @@ published: true
 
 * Xcode 8.2.1
 
-* [CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
+* [CocoaLumberjack 3.0.0 - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
 ## 快速使用
 
-**CocoaLumberjack** 引入项目
-
-```bash
-CocoaPods：pod 'CocoaLumberjack'
-```
 在 **application(_:didFinishLaunchingWithOptions:)** 中添加
 
 ```swift

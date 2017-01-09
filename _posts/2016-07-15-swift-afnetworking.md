@@ -13,11 +13,11 @@ published: true
 
 * Xcode 8.2.1
 
-* [AFNetworking - GitHub](https://github.com/AFNetworking/AFNetworking)
+* [AFNetworking 3.1.0 - GitHub](https://github.com/AFNetworking/AFNetworking)
 
-* 日志输出使用 [CocoaLumberjack - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
+* 日志输出使用 [CocoaLumberjack 3.0.0 - GitHub](https://github.com/CocoaLumberjack/CocoaLumberjack)
 
-## 代码
+## 快速使用
 
 Get 请求
 
