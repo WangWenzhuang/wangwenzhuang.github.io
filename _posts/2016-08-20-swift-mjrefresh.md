@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swift 使用 MJRefresh"
+title: "使用 MJRefresh 下拉刷新"
 description: ""
 category: Swfit
 tags: ["MJRefresh"]
@@ -9,17 +9,20 @@ published: true
 
 ## 环境
 
-*	使用 Swift 2.3
+* Swift 3.0.2
 
-*	MJRefresh 3.1.12，[MJRefresh - GitHub](https://github.com/CoderMJLee/MJRefresh)
+* Xcode 8.2.1
 
-## 代码
+* [MJRefresh 3.1.1 - GitHub](https://github.com/CoderMJLee/MJRefresh)
 
-<pre><code class="language-swift">let header = MJRefreshNormalHeader()
+## 快速使用
+
+```swift
+let header = MJRefreshNormalHeader()
 header.setRefreshingTarget(self, refreshingAction: Selector("headerRefresh"))
 header.lastUpdatedTimeLabel.hidden = true
 tableView.mj_header = header
-tableView.mj_header.automaticallyChangeAlpha = true
+tableView.mj_header.isAutomaticallyChangeAlpha = true
 let footer = MJRefreshBackNormalFooter()
 footer.setRefreshingTarget(self, refreshingAction: Selector("footerRefresh"))
 tableView.mj_footer = footer
@@ -37,4 +40,4 @@ tableView.mj_footer.endRefreshingWithNoMoreData()
 
 // 重置没有更多
 tableView.mj_footer.resetNoMoreData()
-</code></pre>
+```

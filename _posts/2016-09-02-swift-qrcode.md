@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swift 生成二维码"
+title: "生成二维码"
 description: ""
 category: Swfit
 tags: ["二维码"]
@@ -9,39 +9,48 @@ published: true
 
 ## 效果图
 
-<img src="/images/post/2016-09-02-swift-create-qrcodeimage/IMG_3229.PNG" style="width:320px;height:569px;" />
+<img src="/images/post/2016-09-02-swift-qrcode/IMG_3229.PNG" style="width:320px;height:569px;" />
 
 ## 环境
 
-*	使用 Swift 2.3
+* Swift 3.0.2
+
+* Xcode 8.2.1
 
 ## 代码
 
 核心代码
 
-<pre><code class="language-swift">func createQRCodeImage(text: String, width: CGFloat) -> UIImage {
+```swift
+func createQRCodeImage(_ text: String, width: CGFloat) -> UIImage {
     let filter = CIFilter(name: "CIQRCodeGenerator")
     filter?.setDefaults()
-    filter?.setValue(text.dataUsingEncoding(NSUTF8StringEncoding), forKey: "inputMessage")
+    filter?.setValue(text.data(using: String.Encoding.utf8), forKey: "inputMessage")
     let ciImage = filter?.outputImage
     let bgImage = createNonInterpolatedUIImageFormCIImage(ciImage!, width: width)
     return bgImage
 }
 
-private func createNonInterpolatedUIImageFormCIImage(image: CIImage, width: CGFloat) -> UIImage {
-    let extent: CGRect = CGRectIntegral(image.extent)
-    let scale: CGFloat = min(width/CGRectGetWidth(extent), width/CGRectGetHeight(extent))
-    let width = CGRectGetWidth(extent) * scale
-    let height = CGRectGetHeight(extent) * scale
-    let cs: CGColorSpaceRef = CGColorSpaceCreateDeviceGray()!
-    let bitmapRef = CGBitmapContextCreate(nil, Int(width), Int(height), 8, 0, cs, 0)!
+fileprivate func createNonInterpolatedUIImageFormCIImage(_ image: CIImage, width: CGFloat) -> UIImage {
+    let extent: CGRect = image.extent.integral
+    let scale: CGFloat = min(width/extent.width, width/extent.height)
+    let width = extent.width * scale
+    let height = extent.height * scale
+    let cs: CGColorSpace = CGColorSpaceCreateDeviceGray()
+    let bitmapRef = CGContext(data: nil, width: Int(width), height: Int(height), bitsPerComponent: 8, bytesPerRow: 0, space: cs, bitmapInfo: 0)!
     let context = CIContext(options: nil)
-    let bitmapImage: CGImageRef = context.createCGImage(image, fromRect: extent)
+    let bitmapImage: CGImage = context.createCGImage(image, from: extent)!
     
-    CGContextSetInterpolationQuality(bitmapRef,  CGInterpolationQuality.None)
-    CGContextScaleCTM(bitmapRef, scale, scale)
-    CGContextDrawImage(bitmapRef, extent, bitmapImage)
-    let scaledImage: CGImageRef = CGBitmapContextCreateImage(bitmapRef)!
-    return UIImage(CGImage: scaledImage)
+    bitmapRef.interpolationQuality = CGInterpolationQuality.none
+    bitmapRef.scaleBy(x: scale, y: scale)
+    bitmapRef.draw(bitmapImage, in: extent)
+    let scaledImage: CGImage = bitmapRef.makeImage()!
+    return UIImage(cgImage: scaledImage)
 }
-</code></pre>
+```
+
+使用
+
+```swift
+self.QRCodeImg.image = self.createQRCodeImage(data, width: UIScreen.main.bounds.size.width - UIScreen.main.bounds.size.width * 0.2)
+```

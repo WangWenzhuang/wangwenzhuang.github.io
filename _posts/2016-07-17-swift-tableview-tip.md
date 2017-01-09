@@ -9,29 +9,35 @@ published: true
 
 ## 环境
 
-*   使用 Swift 2.3
+* Swift 3.0.2
+
+* Xcode 8.2.1
 
 ## 代码
 
 设置分割线颜色
 
-<pre><code class="language-swift">self.tableView.separatorColor = UIColor.redColor()
-</code></pre>
+```swift
+self.tableView.separatorColor = UIColor.red()
+```
 
 设置背景颜色
 
-<pre><code class="language-swift">self.tableView.backgroundColor = UIColor.redColor()
-</code></pre>
+```swift
+self.tableView.backgroundColor = UIColor.red()
+```
 
 Plain 样式去掉多余分割线
 
-<pre><code class="language-swift">let tableFooterView = UIView()
-tableFooterView.backgroundColor = UIColor.clearColor()
+```swift
+let tableFooterView = UIView()
+tableFooterView.backgroundColor = UIColor.clear
 self.tableView.tableFooterView = tableFooterView
-</code></pre>
+```
 
 Grouped 样式去掉顶部多余部分
 
-<pre><code class="language-swift">self.tableView.tableHeaderView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, 15))
+```swift
+self.tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 15))
 self.tableView.contentInset = UIEdgeInsetsMake(-16, 0, 0, 0)
-</code></pre>
+```
