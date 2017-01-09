@@ -4,7 +4,8 @@ html *{
 }
 body{
     /*font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;*/
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    /*font-family: Menlo, Monaco, Consolas, "Courier New", monospace;*/
+    font-family: ..., sans-serif;
 	font-size: 16px;
     font-weight: 300;
     line-height: 30px;
@@ -13,7 +14,7 @@ body{
 }
 @media (min-width:768px){
     body{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 a{
@@ -37,8 +38,8 @@ a:visited{
 }
 @media (min-width:768px){
     .menu{
-        width: 85%;
-        max-width: 652px;
+        width: 90%;
+        max-width: 691px;
     }
 }
 .menu ul{
@@ -74,8 +75,8 @@ a:visited{
 }
 @media (min-width:768px){
     .footer{
-        width: 85%;
-        max-width: 652px;
+        width: 90%;
+        max-width: 691px;
     }
 }
 /*index*/
@@ -88,8 +89,8 @@ a:visited{
 }
 @media (min-width:768px){
     .index {
-        width: 85%;
-        max-width: 652px;
+        width: 90%;
+        max-width: 691px;
     }
 }
 .index-item{
@@ -168,8 +169,8 @@ a:visited{
 }
 @media (min-width:768px) {
     .about {
-        width: 85%;
-        max-width: 652px;
+        width: 90%;
+        max-width: 691px;
     }
 }
 .about-item{
