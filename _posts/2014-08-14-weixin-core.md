@@ -16,7 +16,8 @@ published: true
 
 实现 IWeiXinService 接口
 
-<pre><code class="language-csharp">// 首先实现 IWeiXinService 接口
+```c#
+// 首先实现 IWeiXinService 接口
 public class ProcessMessage : IWeiXinService
 {
     /// <summary>
@@ -68,12 +69,17 @@ public class ProcessMessage : IWeiXinService
         }
         return result;
     }
-}</code></pre>
+}
+```
 
 注册实现的接口
 
-<pre><code class="language-csharp">WeiXinService.Register(_Service, appid, appsecret);</code></pre>
+```c#
+WeiXinService.Register(_Service, appid, appsecret);
+```
 
 处理微信服务器发来的 xml
 
-<pre><code class="language-csharp">WeiXinService.ProcessMessage(xml);</code></pre>
+```c#
+WeiXinService.ProcessMessage(xml);
+```
