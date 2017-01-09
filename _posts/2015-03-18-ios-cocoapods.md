@@ -78,8 +78,4 @@ pod update
     Operation not permitted - /usr/bin/xcodeproj`
 
 	解决办法：
-
-	```bash
-	sudo gem install -n /usr/local/bin cocoapods
-	```
-
+		sudo gem install -n /usr/local/bin cocoapods
