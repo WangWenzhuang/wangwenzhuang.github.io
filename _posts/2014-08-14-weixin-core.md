@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[ 技术 ] 微信公众号开发 Sdk"
+title: "[ .Net ] 微信公众号开发 Sdk"
 description: ""
-category: 技术
-tags: ["C#","微信"]
+category: .Net
+tags: ["微信"]
 published: true
 ---
 

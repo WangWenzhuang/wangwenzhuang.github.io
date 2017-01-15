@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[ 技术 ] HTTP GET 方法的简单访问效验"
+title: "[ .Net ] HTTP GET 方法的简单访问效验"
 description: ""
-category: 技术
-tags: ["C#","HTTP"]
+category: .Net
+tags: ["HTTP"]
 published: true
 ---
 

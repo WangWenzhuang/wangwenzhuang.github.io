@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[ 技术 ] Spring Boot 快速入门"
+title: "[ Java ] Spring Boot 快速入门"
 description: ""
-category: 技术
+category: Java
 tags: ["Spring Boot"]
 published: true
 ---
