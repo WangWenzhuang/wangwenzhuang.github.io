@@ -3,7 +3,11 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
+    {% if page.categories != empty %}
+      <title>[ {{page.categories}} ] {{ page.title }</title>
+    {% else %}
+      <title>{{ page.title }}</title>
+		{%endif %}
     <link rel="fluid-icon" href="/fluidicon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114.png" />
