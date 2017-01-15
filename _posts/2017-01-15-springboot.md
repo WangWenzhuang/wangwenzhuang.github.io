@@ -95,6 +95,7 @@ public class AppController { }
 @Controller
 public class HomeController { }
 ```
+
 ## thymeleaf
 
 > Thymeleaf提供了一个用于整合Spring MVC的可选模块，在应用开发中，你可以使用Thymeleaf来完全代替JSP，或其他模板引擎，如Velocity、FreeMarker等。Thymeleaf的主要目标在于提供一种可被浏览器正确显示的、格式良好的模板创建方式，因此也可以用作静态建模。你可以使用它创建经过验证的XML与HTML模板。相对于编写逻辑或代码，开发者只需将标签属性添加到模板中即可。接下来，这些标签属性就会在DOM（文档对象模型）上执行预先制定好的逻辑。
@@ -324,7 +325,7 @@ public final class JsonSerializerUtility {
 }
 ```
 
-### HTTP 请求，结合 JSONObject 使用
+### HTTP 请求，结合 JsonSerializerUtility 使用
 
 ```java
 public final class HttpRequestUtility {
