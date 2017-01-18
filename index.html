@@ -21,7 +21,7 @@ layout: page
 	{% endfor %}
 	<div class="index-pagination">
 		{% if paginator.previous_page %}
-			{% if paginator.previous_page ==1 %}
+			{% if paginator.previous_page == 1 %}
 				<a href="/"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
 			{% else %}
 				<a href="/page{{ paginator.previous_page }}"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
