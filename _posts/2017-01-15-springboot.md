@@ -24,27 +24,27 @@ public class AppController { }
 这样就将 **api/app** 映射到 **AppController** 类。方法的映射也是一样：
 
 ```java
-@RequestMapping("AppIsAudit")
-public Map AppIsAudit() {
+@RequestMapping("appIsAudit")
+public Map appIsAudit() {
     // 实现代码
 }
 ```
 
-如果类上添加了 Url 映射，类中的方法会继承类的 Url，上面的 **AppIsAudit** 方法如果在 **AppController** 类中，那么路径为：**api/app/AppIsAudit**。
+如果类上添加了 Url 映射，类中的方法会继承类的 Url，上面的 **appIsAudit** 方法如果在 **AppController** 类中，那么路径为：**api/app/appIsAudit**。
 
 ### 多个 Url 映射
 
 ```java
-@RequestMapping({"/", "Default", "Index"})
+@RequestMapping({"/", "default", "index"})
 ```
 
-这样就将 **/**、**/Default**、**/Index** 映射到同一个方法中。
+这样就将 **/**、**/default**、**/index** 映射到同一个方法中。
 
 ### RESTful
 
 ```java
-@RequestMapping("Index/{userId}")
-public String Index(Model model, @PathVariable String userId) {
+@RequestMapping("index/{userId}")
+public String index(Model model, @PathVariable String userId) {
     // 实现代码
 }
 ```
@@ -52,18 +52,18 @@ public String Index(Model model, @PathVariable String userId) {
 ### 指定 HTPP 方法
 
 ```java
-@RequestMapping(value = "AutoSaveTest", method = RequestMethod.POST)
+@RequestMapping(value = "autoSaveTest", method = RequestMethod.POST)
 ```
 
 ### 指定多个 HTPP 方法
 
 ```java
-@RequestMapping(value = "AutoSaveTest", method = {RequestMethod.POST, RequestMethod.GET})
+@RequestMapping(value = "autoSaveTest", method = {RequestMethod.POST, RequestMethod.GET})
 ```
 
 ### 忽略大小写
 
-RequestMapping 路径是大小写敏感的，**@RequestMapping("AppIsAudit")** 使用 **AppIsAudit** 是可以请求到，但是使用 **appisaudit** 是请求不到的。忽略大小写：
+RequestMapping 路径是大小写敏感的，**@RequestMapping("appIsAudit")** 使用 **appIsAudit** 是可以请求到，但是使用 **Appisaudit** 是请求不到的。忽略大小写：
 
 ```java
 @Configuration
@@ -121,7 +121,7 @@ src/main/resources/templates/
 
 在 **templates** 文件夹创建 **.html** 文件，在 **@Controller** 中返回对应的 **.html** 文件名即可。
 
-Index.html
+index.html
 
 ```html
 <!DOCTYPE html>
@@ -141,20 +141,20 @@ HomeController.java
 ```java
 @Controller
 public class HomeController {
-    @RequestMapping({"/","Index"})
-    public String Index() {
-        return "Index";
+    @RequestMapping({"/","index"})
+    public String index() {
+        return "index";
     }
 }
 ```
 
-这样 **HomeController** 中的 **Index** 方法就会和 **Index.html** 绑定了。
+这样 **HomeController** 中的 **index** 方法就会和 **index.html** 绑定了。
 
 ### 使用布局
 
 > 在开发中，很多页面的布局都是统一的，不一样的只是内容。例如网站的导航就是统一的。一般会把这些一致的部分提取出来做成公共的，使用时只需要引入布局界面。
 
-布局页中使用 **layout:fragment** 定义，作为需要改变的内容区域，下面是布局页 **Layout.html**
+布局页中使用 **layout:fragment** 定义，作为需要改变的内容区域，下面是布局页 **layout.html**
 
 ```html
 <!DOCTYPE html>
@@ -181,11 +181,11 @@ public class HomeController {
 </html>
 ```
 
-引用布局页面使用 **layout:decorator** 定义，下面是 **Index.html** 使用布局页
+引用布局页面使用 **layout:decorator** 定义，下面是 **index.html** 使用布局页
 
 ```html
-<!--引用 Layout 布局页-->
-<html layout:decorator="Layout">
+<!--引用 layout 布局页-->
+<html layout:decorator="layout">
 <head>
     <title>医博士</title>
 </head>
@@ -199,7 +199,7 @@ public class HomeController {
 </html>
 ```
 
-此时 **Index.html** 会合并内容，完整内容为
+此时 **index.html** 会合并内容，完整内容为
 
 ```html
 <!DOCTYPE html>
@@ -217,6 +217,94 @@ public class HomeController {
     <script src="/jquery-3.1.1.min.js"></script>
     <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script src="/layer_mobile/layer.js"></script>
+</head>
+<body>
+<div class="container" style="margin-top: 15px;">
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item" style="text-align:center;"><span class="glyphicon glyphicon-info-sign"></span>
+                yiboshi App for java v1.0
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+```
+
+### 使用部件（代码片段）
+
+部件页中使用 **th:fragment** 定义，下面是部件页 **wxPart.html**。 这段代码主要作用为在微信中隐藏微信菜单栏
+
+```html
+<script th:fragment="wxHideMenu">
+    function onBridgeReady() {
+        WeixinJSBridge.call('hideOptionMenu');
+    }
+    if (typeof WeixinJSBridge == "undefined") {
+        if (document.addEventListener) {
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        } else if (document.attachEvent) {
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }
+    } else {
+        onBridgeReady();
+    }
+</script>
+```
+
+引用部件页面使用 **th:include** 定义，下面是 **index.html** 使用部件页
+
+```html
+<html layout:decorator="layout">
+<head>
+    <title>医博士</title>
+    <script th:include="wxPart :: wxHideMenu"></script>
+</head>
+<div layout:fragment="content">
+    <ul class="list-group">
+        <li class="list-group-item" style="text-align:center;"><span class="glyphicon glyphicon-info-sign"></span>
+            yiboshi App for java v1.0
+        </li>
+    </ul>
+</div>
+</html>
+```
+
+此时 **index.html** 会合并内容，完整内容为
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>医博士</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-144.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144.png"/>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" href="/bootstrap-3.3.7/css/bootstrap.min.css"/>
+    <script src="/jquery-3.1.1.min.js"></script>
+    <script src="/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="/layer_mobile/layer.js"></script>
+    <script th:fragment="wxHideMenu">
+        function onBridgeReady() {
+            WeixinJSBridge.call('hideOptionMenu');
+        }
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+            } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+            }
+        } else {
+            onBridgeReady();
+        }
+    </script>
 </head>
 <body>
 <div class="container" style="margin-top: 15px;">
@@ -263,131 +351,4 @@ public String Index(Model model) {
     var msg = /*[[${Msg}]]*/ "";
     /*]]>*/
 </script>
-```
-
-## 其他
-
-### 使用 org.json.JSONObject
-
-> 可以将 Json 字符串、Map 对象 转换成 JSONObject。
-
-pom.xml 文件 **dependencies** 添加
-
-```xml
-<dependency>
-    <groupId>org.json</groupId>
-    <artifactId>json</artifactId>
-</dependency>
-```
-
-使用
-
-```java
-new JSONObject(jsonStr);
-new JSONObject(map);
-```
-
-我写了一个类可以将 Json 字符串、JSONObject 转换为 Map 对象；也可将 Map 对象转换为 Json 字符串。
-
-```java
-public final class JsonSerializerUtility {
-    public static Map jsonStrToMap(String jsonStr) {
-        return jsonObjectToMap(new JSONObject(jsonStr));
-    }
-
-    public static Map jsonObjectToMap(JSONObject jsonObject) throws JSONException {
-        Map result = new HashMap();
-        Iterator iterator = jsonObject.keys();
-        while (iterator.hasNext()) {
-            String key = (String) iterator.next();
-            Object value = jsonObject.get(key);
-            if (value instanceof JSONObject) {
-                Map map = jsonObjectToMap((JSONObject) value);
-                result.put(key, map);
-            } else if (value instanceof JSONArray) {
-                JSONArray jsonArray = (JSONArray) value;
-                ArrayList arrayList = new ArrayList();
-                for (int i = 0; i < jsonArray.length(); i++) {
-                    JSONObject jsonObject1 = jsonArray.getJSONObject(i);
-                    arrayList.add(jsonObjectToMap(jsonObject1));
-                }
-                result.put(key, arrayList);
-            } else {
-                result.put(key, value);
-            }
-        }
-        return result;
-    }
-
-    public static String mapToString(Map map) {
-        return new JSONObject(map).toString();
-    }
-}
-```
-
-### HTTP 请求，结合 JsonSerializerUtility 使用
-
-```java
-public final class HttpRequestUtility {
-    public static Map Get(String url) {
-        StringBuffer jsonStr = new StringBuffer();
-        BufferedReader buffer = null;
-        try {
-            HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
-            con.setRequestMethod("GET");
-            con.setRequestProperty("Content-Type", "application/json; charset=utf-8");
-            buffer = new BufferedReader(new InputStreamReader(con.getInputStream()));
-            String line;
-            while ((line = buffer.readLine()) != null) {
-                jsonStr.append(line);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (buffer != null) {
-                try {
-                    buffer.close();
-                } catch (IOException e2) {
-                    e2.printStackTrace();
-                }
-            }
-        }
-        return JsonSerializerUtility.jsonStrToMap(jsonStr.toString());
-    }
-
-    public static Map Post(String url, String data) {
-        OutputStreamWriter outputStreamWriter = null;
-        BufferedReader bufferedReader = null;
-        StringBuffer jsonStr = new StringBuffer();
-        try {
-            HttpURLConnection con = (HttpURLConnection) new URL(url).openConnection();
-            con.setRequestMethod("POST");
-            con.setDoOutput(true);
-            con.setDoInput(true);
-            con.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-            outputStreamWriter = new OutputStreamWriter(con.getOutputStream());
-            outputStreamWriter.write(data);
-            outputStreamWriter.flush();
-            bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                jsonStr.append(line);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (outputStreamWriter != null) {
-                    outputStreamWriter.close();
-                }
-                if (bufferedReader != null) {
-                    bufferedReader.close();
-                }
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        }
-        return JsonSerializerUtility.jsonStrToMap(jsonStr.toString());
-    }
-}
 ```
