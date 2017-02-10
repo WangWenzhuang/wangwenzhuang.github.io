@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Java ] Spring Boot 多环境切换"
+title: "[ Java ] Spring Boot 环境切换"
 description: ""
 category: Java
 tags: ["Spring Boot"]
