@@ -127,11 +127,3 @@ let array = [8, 3, 1, 2, 4, 9, 5, 6, 7]
 let result = array.min(by: { $0 < $1 }) // 也可以直接使用 array.min()
 // Optional(1)
 ```
-
-### min 符合条件的最小元素
-
-```swift
-let array = [8, 3, 1, 2, 4, 9, 5, 6, 7]
-let result = array.min(by: { $0 < $1 }) // 也可以直接使用 array.min()
-// Optional(1)
-```
