@@ -127,3 +127,19 @@ let array = [8, 3, 1, 2, 4, 9, 5, 6, 7]
 let result = array.min(by: { $0 < $1 }) // 也可以直接使用 array.min()
 // Optional(1)
 ```
+
+### prefix 取数组前 N 个元素
+
+```swift
+let array = [8, 3, 1, 2, 4, 9, 5, 6, 7]
+let result = array.prefix(2)
+// [8, 3]
+```
+
+### suffix 取数组后 N 个元素
+
+```swift
+let array = [8, 3, 1, 2, 4, 9, 5, 6, 7]
+let result = array.suffix(2)
+// [6, 7]
+```
