@@ -41,3 +41,12 @@ Grouped 样式去掉顶部多余部分
 self.tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 15))
 self.tableView.contentInset = UIEdgeInsetsMake(-16, 0, 0, 0)
 ```
+
+去掉分割线左边空白（x=0）
+
+```swift
+override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    cell.separatorInset = .zero
+    cell.layoutMargins = .zero
+}
+```
