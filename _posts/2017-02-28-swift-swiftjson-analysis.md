@@ -106,10 +106,11 @@ throw NSError(domain: ErrorDomain, code: ErrorWrongType, userInfo: [NSLocalizedD
 
 ### 实现的协议
 
-**Comparable** 运算符重载，实现此协议可以对实例进行比较
+* Comparable 运算符重载，实现此协议可以对实例进行比较
 
-**Collection** 自定义集合，其中 **subscript** 方法是实现 json[] 的主要方法
+* Collection 自定义集合，其中 **subscript** 方法是实现 json[] 的主要方法
 
-**Swift.ExpressibleByIntegerLiteral**、**Swift.ExpressibleByBooleanLiteral**、**Swift.ExpressibleByFloatLiteral**、**Swift.ExpressibleByDictionaryLiteral**、**Swift.ExpressibleByArrayLiteral**、**Swift.ExpressibleByNilLiteral**、**Swift.RawRepresentable** 这些协议是扩展构造函数，**Swift.ExpressibleByIntegerLiteral** 协议代表可以使用字符串进行初始化。其它协议看名字就可以知道了
+* Swift.ExpressibleByIntegerLiteral、Swift.ExpressibleByBooleanLiteral、Swift.ExpressibleByFloatLiteral、Swift.ExpressibleByDictionaryLiteral、Swift.ExpressibleByArrayLiteral、Swift.ExpressibleByNilLiteral、Swift.RawRepresentable、
+这些协议是扩展构造函数，Swift.ExpressibleByIntegerLiteral 协议代表可以使用字符串进行初始化。其它协议看名字就可以知道了
 
-**Swift.CustomStringConvertible**、**Swift.CustomDebugStringConvertible** 自定义 **description** 和 **debugDescription** 值
+* Swift.CustomStringConvertible、Swift.CustomDebugStringConvertible 自定义 **description** 和 **debugDescription** 值
