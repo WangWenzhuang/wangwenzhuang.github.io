@@ -9,7 +9,7 @@ published: true
 
 ## 简介
 
-> SwiftyJSON 是 Swift 语言开发的一套 JSON 解析框架。SwiftJSON 使用简洁的语法解析 JSON，并为我们解决了可恶的 Optional（可选值），相信使用 Swift 进行开发的人对此深恶痛绝了。GitHub 地址(https://github.com/SwiftyJSON/SwiftyJSON)
+> SwiftyJSON 是 Swift 语言开发的一套 JSON 解析框架。SwiftJSON 使用简洁的语法解析 JSON，并为我们解决了可恶的 Optional（可选值），相信使用 Swift 进行开发的人对此深恶痛绝了。[GitHub 地址](https://github.com/SwiftyJSON/SwiftyJSON)
 
 SwiftJSON 的源码都在 **SwiftyJSON.swift** 文件中，其中只有一个 **struct** **JSON**。为了更好的学习作者的思想，我认为需要先理解各种语法
 
@@ -48,9 +48,9 @@ do {
 public init(_ object: Any) {}
 ```
 
-**_** 修饰的参数，在调用时可以简写为 **JSON("Swift")**，如果不使用 **_** 为 **JSON(object: "Swift")**
+_ 修饰的参数，在调用时可以简写为 **JSON("Swift")**，如果不使用 _ 为 **JSON(object: "Swift")**
 
-### `@available` 声明类型的生命周期依赖于特定的平台和系统版本
+### **@available** 声明类型的生命周期依赖于特定的平台和系统版本
 
 ```swift
 @available(*, deprecated: 3.2, message: "Use instead `init(parseJSON: )`")
@@ -106,10 +106,10 @@ throw NSError(domain: ErrorDomain, code: ErrorWrongType, userInfo: [NSLocalizedD
 
 ### 实现的协议
 
-* **Comparable** 运算符重载，实现此协议可以对实例进行比较
+**Comparable** 运算符重载，实现此协议可以对实例进行比较
 
-* **Collection** 自定义集合，其中 **subscript** 方法是实现 json[] 的主要方法
+**Collection** 自定义集合，其中 **subscript** 方法是实现 json[] 的主要方法
 
-* **Swift.ExpressibleByIntegerLiteral**、**Swift.ExpressibleByBooleanLiteral**、**Swift.ExpressibleByFloatLiteral**、**Swift.ExpressibleByDictionaryLiteral**、**Swift.ExpressibleByArrayLiteral**、**Swift.ExpressibleByNilLiteral**、**Swift.RawRepresentable** 这些协议是扩展构造函数，**Swift.ExpressibleByIntegerLiteral** 协议代表可以使用字符串进行初始化。其它协议看名字就可以知道了
+**Swift.ExpressibleByIntegerLiteral**、**Swift.ExpressibleByBooleanLiteral**、**Swift.ExpressibleByFloatLiteral**、**Swift.ExpressibleByDictionaryLiteral**、**Swift.ExpressibleByArrayLiteral**、**Swift.ExpressibleByNilLiteral**、**Swift.RawRepresentable** 这些协议是扩展构造函数，**Swift.ExpressibleByIntegerLiteral** 协议代表可以使用字符串进行初始化。其它协议看名字就可以知道了
 
-* **Swift.CustomStringConvertible**、**Swift.CustomDebugStringConvertible** 自定义 **description** 和 **debugDescription** 值
+**Swift.CustomStringConvertible**、**Swift.CustomDebugStringConvertible** 自定义 **description** 和 **debugDescription** 值
