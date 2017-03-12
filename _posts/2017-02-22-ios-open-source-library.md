@@ -8,7 +8,7 @@ published: true
 ---
 
 | 框架 | 描述 |
-| --: | :-- |
+| :-- | :-- |
 | [iCarousel](https://github.com/nicklockwood/iCarousel) | 视图切换 |
 | [MJRefresh](https://github.com/CoderMJLee/MJRefresh) | 刷新控件（上拉下拉） |
 | [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) | HUD（加载、提示等） |
