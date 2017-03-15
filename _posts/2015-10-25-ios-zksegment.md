@@ -12,11 +12,11 @@ published: true
 > ZKSegment 是一个分段选择控件，支持多种样式选择，功能强大
 [ZKSegment - GitHub](https://github.com/WangWenzhuang/ZKSegment)
 
-<img src="/images/post/2015-10-25-ios-zksegment/1.png" style="width:320px;height:480px;" />
+![demo1](/images/post/2015-10-25-ios-zksegment/1.png)
 
-<img src="/images/post/2015-10-25-ios-zksegment/2.png" style="width:320px;height:480px;" />
+![demo2](/images/post/2015-10-25-ios-zksegment/2.png)
 
-<img src="/images/post/2015-10-25-ios-zksegment/3.png" style="width:320px;height:480px;" />
+![demo3](/images/post/2015-10-25-ios-zksegment/3.png)
 
 ## 安装
 

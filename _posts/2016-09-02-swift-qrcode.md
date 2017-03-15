@@ -9,7 +9,7 @@ published: true
 
 ## 效果图
 
-<img src="/images/post/2016-09-02-swift-qrcode/IMG_3229.PNG" style="width:320px;height:569px;" />
+![demo](/images/post/2016-09-02-swift-qrcode/IMG_3229.PNG)
 
 ## 环境
 

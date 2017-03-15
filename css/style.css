@@ -144,10 +144,6 @@ a:visited{
 .post-content a{
 	text-decoration: underline;
 }
-.post-content img{
-    width: 100%;
-    height: auto;
-}
 .post-footer{
 	border-top: 1px solid #3f3f3f;
 	margin-top: 20px;
