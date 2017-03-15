@@ -13,7 +13,7 @@ published: true
 
 iOS App 上易于使用的 HUD
 
-![demo](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/demo.gif)
+<img src="/images/post/2017-03-15-swift-zkprogresshud/demo.gif" style="width:320px;height:570px;" />
 
 ## 运行环境
 
@@ -131,14 +131,14 @@ ZKProgressHUD.hide(delay: 3)
 
 ## 自定义😏
 
-![style1](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style1.PNG)
-![style2](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style2.PNG)
-![style3](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style3.PNG)
-![style4](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style4.PNG)
-![style5](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style5.PNG)
-![style6](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style6.PNG)
-![style7](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style7.PNG)
-![style8](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/style8.PNG)
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style1.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style2.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style3.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style4.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style5.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style6.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style7.PNG" style="width:320px;height:480px;" />
+<img src="/images/post/2017-03-15-swift-zkprogresshud/style8.PNG" style="width:320px;height:480px;" />
 
 `ZKProgressHUD` 可以通过下面方法进行自定义:
 
