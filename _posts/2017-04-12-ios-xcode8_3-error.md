@@ -17,12 +17,16 @@ published: true
 
 # 解决方法
 
-* [PackageApplication 下载](https://pan.baidu.com/s/1jHJF2Lo)
+1.[PackageApplication 下载](https://pan.baidu.com/s/1jHJF2Lo)
 
-* 复制到 */Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/* 目录下
+2.复制到 */Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/* 目录下
 
-* 执行命令 
+3.执行命令 
 
-    1. `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/`
+```bash
+sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/
+```
 
-    2. `chmod +x /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/PackageApplication`
+```bash
+chmod +x /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/PackageApplication
+```
