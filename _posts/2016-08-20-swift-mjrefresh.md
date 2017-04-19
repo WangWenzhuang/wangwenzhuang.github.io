@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swfit ] 使用 MJRefresh 下拉刷新"
+title: "使用 MJRefresh 下拉刷新"
 description: ""
 category: Swfit
 tags: ["MJRefresh"]

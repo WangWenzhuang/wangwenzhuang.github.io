@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swfit ] UITableView 小技巧"
+title: "UITableView 小技巧"
 description: ""
 category: Swift
 tags: ["UITableView"]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swift ] if let 和 guard else"
+title: "if let 和 guard else"
 description: ""
 category: Swift
 tags: ["if let", "guard else"]

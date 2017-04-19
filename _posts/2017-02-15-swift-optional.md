@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swift ] Optional（可选值）"
+title: "Optional（可选值）"
 description: ""
 category: Swift
 tags: ["Optional"]

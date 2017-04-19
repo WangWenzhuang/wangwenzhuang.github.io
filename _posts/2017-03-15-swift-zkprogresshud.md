@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swift ] ZKProgressHUD iOS 上易于使用的 HUD"
+title: "ZKProgressHUD iOS 上易于使用的 HUD"
 description: ""
 category: Swift
 tags: ["HUD", "Progress"]

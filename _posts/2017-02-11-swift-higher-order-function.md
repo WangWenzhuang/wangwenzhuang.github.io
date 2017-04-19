@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swift ] 高阶函数"
+title: "高阶函数"
 description: ""
 category: Swift
 tags: ["高阶函数"]

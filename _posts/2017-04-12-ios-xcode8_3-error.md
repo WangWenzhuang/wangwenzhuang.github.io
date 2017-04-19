@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ iOS ] Xcode 8.3 命令打包出错"
+title: "Xcode 8.3 命令打包出错"
 description: ""
 category: iOS
 tags: ["Xcode"]

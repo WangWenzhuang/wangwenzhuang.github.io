@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swfit ] 使用 AFNetworking 网络框架"
+title: "使用 AFNetworking 网络框架"
 description: ""
 category: Swfit
 tags: ["AFNetworking"]

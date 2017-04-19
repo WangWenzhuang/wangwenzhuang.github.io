@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ .Net ] HTTP GET 方法的简单访问效验"
+title: "HTTP GET 方法的简单访问效验"
 description: ""
 category: .Net
 tags: ["HTTP"]

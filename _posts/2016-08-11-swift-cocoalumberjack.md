@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swfit ] 使用 CocoaLumberjack 日志框架"
+title: "使用 CocoaLumberjack 日志框架"
 description: ""
 category: Swift
 tags: ["CocoaLumberjack"]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ Swfit ] 使用 DZNEmptyDataSet"
+title: "使用 DZNEmptyDataSet"
 description: ""
 category: Swfit
 tags: ["DZNEmptyDataSet"]
