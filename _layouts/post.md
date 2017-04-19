@@ -7,7 +7,7 @@ layout: default
 	});
 </script>
 <div class="container">
-	<div class="post-title"><span class="fa fa-bookmark"></span>&nbsp;[ {{ page.categories }} ]{{ page.title }}</div>
+	<div class="post-title"><span class="fa fa-bookmark"></span>&nbsp;[ {{ page.categories }} ] {{ page.title }}</div>
 	<div class="post-time">
 		<span class="fa fa-calendar"></span>&nbsp;<time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
 	</div>
