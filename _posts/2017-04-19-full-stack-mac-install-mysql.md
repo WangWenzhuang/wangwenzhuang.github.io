@@ -2,7 +2,7 @@
 layout: post
 title: "使用 Homebrew 安装 MySQL"
 description: ""
-category: Full Stack
+category: 全栈之路
 tags: ["MySql"]
 published: true
 ---
