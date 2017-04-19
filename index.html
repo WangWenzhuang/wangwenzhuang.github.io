@@ -15,7 +15,7 @@ layout: page
 				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;&nbsp;</time>
 			</span>
 			<a href="{{ post.url }}" title="[ {{ post.categories }} ]{{ post.title }}">
-				{{ post.title }}
+				[ {{ post.categories }} ]{{ post.title }}
 			</a>
 		</div>
 	{% endfor %}
