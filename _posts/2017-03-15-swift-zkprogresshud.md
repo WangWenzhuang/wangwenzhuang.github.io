@@ -18,6 +18,8 @@ published: true
 
 iOS App 上极易于使用的 HUD。
 
+[GitHub - ZKProgressHUD](https://github.com/WangWenzhuang/ZKProgressHUD)
+
 ![demo](https://raw.githubusercontent.com/WangWenzhuang/ZKProgressHUD/master/image/demo.gif)
 
 ## 实现功能😌
