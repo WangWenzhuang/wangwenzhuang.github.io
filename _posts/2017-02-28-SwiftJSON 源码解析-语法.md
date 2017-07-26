@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SwiftJSON 源码解析（一）语法"
+title: "SwiftJSON 源码解析-语法"
 description: ""
 category: Swift
 tags: ["SwiftJSON"]
