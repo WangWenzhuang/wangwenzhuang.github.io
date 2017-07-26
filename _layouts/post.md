@@ -23,5 +23,4 @@ layout: default
 			{% endfor %}
 		{%endif %}
 	</div>
-	{% include comments.md %}
 </div>
