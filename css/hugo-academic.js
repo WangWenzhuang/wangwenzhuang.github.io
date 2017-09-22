@@ -144,13 +144,6 @@
       resizeTimer = setTimeout(fixScrollspy, 200);
     });
 
-    // Enable publication filter for publication index page.
-    if ($('.pub-filters-select')) {
-      filter_publications();
-      // Useful for changing hash manually (e.g. in development):
-      // window.addEventListener('hashchange', filter_publications, false);
-    }
-
   });
 
 })(jQuery);
