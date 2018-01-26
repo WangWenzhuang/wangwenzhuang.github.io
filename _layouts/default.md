@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/plugins/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/monokai.sublime.syntax.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/plugins/jquery-3.1.1.min.js"></script>
+    <script src="/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -22,7 +24,6 @@
           s.parentNode.insertBefore(hm, s);
         })();
     </script>
-
   </head>
   <body>
     <div class="menu">
@@ -32,7 +33,5 @@
     <div class="footer">
       {% include footer.md %}
     </div>
-    <script src="/plugins/jquery-3.1.1.min.js"></script>
-    <script src="/plugins/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
