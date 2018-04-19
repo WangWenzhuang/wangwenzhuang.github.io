@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: default
 title: "移动端持续集成：Jenkins、fir.im"
 description: ""
-category: 敏捷
-tags: ["敏捷", "持续集成", "Jenkins", "fir.im"]
+tags: ["敏捷"]
 published: true
 ---
 

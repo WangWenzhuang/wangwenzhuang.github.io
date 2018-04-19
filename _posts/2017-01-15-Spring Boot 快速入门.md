@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: default
 title: "Spring Boot 快速入门"
 description: ""
-category: Java
-tags: ["Spring Boot"]
+tags: ["Java"]
 published: true
 ---
 

@@ -1,9 +1,8 @@
 ---
-layout: post
+layout: default
 title: "UITableView 小技巧"
 description: ""
-category: Swift
-tags: ["UITableView"]
+tags: ["iOS"]
 published: true
 ---
 
