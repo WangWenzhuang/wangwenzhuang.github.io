@@ -3,6 +3,7 @@ url: #Your url here
 baseurl: /project
 
 # variables
+author: 王文壮
 name: 王文壮的博客
 description: Your description here
 google_verification: null

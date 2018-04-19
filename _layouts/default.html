@@ -66,7 +66,7 @@
 			{% else %}
 				<div class="left">{{ site.posts | size }} object(s)</div>
 			{% endif %}
-			<div class="right">&nbsp;</div>
+			<div class="right">Copyright 2014 - {{site.time | date:"%Y"}}&nbsp;{{ site.author }}</div>
 		</div>
 	</div>
 	{% if page.title %}
@@ -91,8 +91,5 @@
     {% endif %}
 	<script src="/assets/js/001.js"></script>
 	<script src="/assets/js/002.js"></script>
-	<div class="footer">
-		<p>&copy;&nbsp;Copyright 2014 - {{site.time | date:"%Y"}}&nbsp;{{ site.author }}</p>
-	</div>
 </body>
 </html>
