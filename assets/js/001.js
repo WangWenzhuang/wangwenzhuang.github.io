@@ -31,6 +31,3 @@ function minimize () {
 		cont.style.width = "98.5%";
 	}
 }
-
-max.addEventListener('click', maximize, false);
-min.addEventListener('click', minimize, false);
