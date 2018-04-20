@@ -13,12 +13,16 @@ body {
 	border-color: #fff8ff #000000 #000000 #fff8ff;
 	padding: 2px 0;
 }
+.default_title {
+	h1 {
+		color: #bfb8bf;
+	}
+}
 .default_title, .post_title {
 	padding: 2px 4px 3px 4px;
 	position: relative;
 
 	h1 {
-		color: #131213;
 		font-size: 14px;
 		font-weight: bold;
 	}
@@ -32,6 +36,7 @@ body {
 }
 .post_title {
 	h1 {
+		color: #131213;
 		display: inline-block;
 	}
 
