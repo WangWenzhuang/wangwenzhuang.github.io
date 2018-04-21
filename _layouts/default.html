@@ -64,7 +64,7 @@
 			{% else %}
 				<div class="left">{{ site.posts | size }} object(s)</div>
 			{% endif %}
-			<div class="right">Copyright 2014 - {{site.time | date:"%Y"}}&nbsp;{{ site.author }}</div>
+			<div class="right">&copy{{site.time | date:"%Y"}}&nbsp;{{ site.author }}</div>
 		</div>
 	</div>
 	{% if page.title %}
@@ -77,7 +77,7 @@
 				<div class="btn"><span class="fa fa-window-minimize"></span></div>
 			</div>
 			<ul class="topbar">
-				<li>{{ page.date | date: '%B %-d, %Y' }}</li>
+				<li>{{ page.date | date:"%Y-%m-%d" }}</li>
 			</ul>
 			<div class="post_content">
         		{{ content }}
