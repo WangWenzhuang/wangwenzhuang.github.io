@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: post
 title: "SwiftJSON 源码解析-语法"
 description: ""
-tags: ["iOS"]
+category: Swift
+tags: ["SwiftJSON"]
 published: true
 ---
 

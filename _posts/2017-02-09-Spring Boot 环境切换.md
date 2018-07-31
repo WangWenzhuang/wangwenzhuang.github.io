@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: post
 title: "Spring Boot 环境切换"
 description: ""
-tags: ["Java"]
+category: Java
+tags: ["Spring Boot"]
 published: true
 ---
 

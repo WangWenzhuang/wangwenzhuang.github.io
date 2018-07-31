@@ -1,26 +1,8 @@
-permalink: /:year:month:day/:title
-url: #Your url here
-baseurl: /project
-
-# variables
-author: 王文壮
-name: 王文壮的博客
-description: Your description here
-google_verification: null
-
-
-# File management
-include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
-
-# Sass
-sass:
-  style: :compressed
-  sass_dir: _sass
-
-# Markdown
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    disable : true
+permalink: /:year/:month/:day/:title/
+url: http://www.wangwenzhuang.com
+author: 王文壮
+encoding: utf-8
+paginate: 10
+paginate_path: "page:num"
+highlighter: rouge

@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: post
 title: "使用 CocoaPods 管理依赖库"
 description: ""
-tags: ["iOS"]
+category: iOS
+tags: ["CocoaPods"]
 published: true
 ---
 
