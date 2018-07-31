@@ -156,24 +156,3 @@ a:visited{
 .post-footer-tags{
 	color: #fc0;
 }
-/*about*/
-.about {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10px;
-}
-@media (min-width:768px) {
-    .about {
-        width: 90%;
-        max-width: 691px;
-    }
-}
-.about-item{
-    border-bottom: 1px solid #3f3f3f;
-    padding: 20px 10px 20px 10px;
-}
-.about-item h2{
-    margin-bottom: 20px;
-}
