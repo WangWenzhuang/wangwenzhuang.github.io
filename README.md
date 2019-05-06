@@ -18,6 +18,6 @@
 
 > [王文壮](http://www.wangwenzhuang.com)
 
-电子邮箱:1020304029@qq.com
+电子邮箱：1020304029@qq.com
 
 个人博客：[http://www.wangwenzhuang.com](http://www.wangwenzhuang.com)
