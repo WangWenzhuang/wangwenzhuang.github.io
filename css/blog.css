@@ -106,6 +106,9 @@ a:visited{
 .index-item-time{
     color: #8e8e8e; 
 }
+.index-ite-time{
+    text-align: right;
+}
 @media (max-width:768px){
     .index-ite-time{
         display: none;
