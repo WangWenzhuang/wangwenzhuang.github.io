@@ -3,7 +3,7 @@ html *{
     -webkit-font-smoothing: antialiased;
 }
 body{
-    font-family: "Monaco", sans-serif;
+    font-family: "Monaco", "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-size: 16px;
     font-weight: 300;
     line-height: 30px;
@@ -107,7 +107,8 @@ a:visited{
     color: #8e8e8e; 
 }
 .index-ite-time{
-    text-align: right;
+    color: #7d7d7d;
+    float: right;
 }
 @media (max-width:768px){
     .index-ite-time{
