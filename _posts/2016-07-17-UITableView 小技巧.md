@@ -2,7 +2,7 @@
 layout: post
 title: "UITableView 小技巧"
 description: ""
-category: Swift
+category: 技术
 tags: ["UITableView"]
 published: true
 ---

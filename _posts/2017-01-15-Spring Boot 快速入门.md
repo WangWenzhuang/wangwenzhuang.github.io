@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Boot 快速入门"
 description: ""
-category: Java
+category: 技术
 tags: ["Spring Boot"]
 published: true
 ---
@@ -187,7 +187,7 @@ public class HomeController {
 <!--引用 layout 布局页-->
 <html layout:decorator="layout">
 <head>
-    <title>医博士</title>
+    <title>title</title>
 </head>
 <div layout:fragment="content">
     <ul class="list-group">
@@ -205,7 +205,7 @@ public class HomeController {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>医博士</title>
+    <title>title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png"/>
@@ -259,7 +259,7 @@ public class HomeController {
 ```html
 <html layout:decorator="layout">
 <head>
-    <title>医博士</title>
+    <title>title</title>
     <script th:include="wxPart :: wxHideMenu"></script>
 </head>
 <div layout:fragment="content">
@@ -278,7 +278,7 @@ public class HomeController {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>医博士</title>
+    <title>title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-114.png"/>

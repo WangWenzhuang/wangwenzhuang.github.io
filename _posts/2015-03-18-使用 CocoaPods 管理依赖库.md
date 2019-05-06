@@ -2,7 +2,7 @@
 layout: post
 title: "使用 CocoaPods 管理依赖库"
 description: ""
-category: iOS
+category: 技术
 tags: ["CocoaPods"]
 published: true
 ---
@@ -14,7 +14,7 @@ CocoaPods 就是为了解决这些麻烦的事情的，使用 CocoaPods 只需�
 
 ## 准备工作
 
-祖国的大局域网是安装不成功的，需要替换 ruby 的源：
+没有科学上网是安装不成功的，需要替换 ruby 的源：
 
 ```bash
 gem sources --remove https://rubygems.org/

@@ -2,7 +2,7 @@
 layout: post
 title: "SwiftJSON 源码解析-语法"
 description: ""
-category: Swift
+category: 技术
 tags: ["SwiftJSON"]
 published: true
 ---

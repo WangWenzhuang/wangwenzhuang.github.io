@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Boot 环境切换"
 description: ""
-category: Java
+category: 技术
 tags: ["Spring Boot"]
 published: true
 ---
