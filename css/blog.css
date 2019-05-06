@@ -135,11 +135,6 @@ a:visited{
     border-bottom: 1px solid #3f3f3f;
     padding-bottom: 20px;
 }
-.post-time{
-    color: #7d7d7d;
-    margin-top: 20px;
-    text-align: left;
-}
 .post-content{
 	margin-top: 20px;
 }
@@ -150,8 +145,13 @@ a:visited{
 	border-top: 1px solid #3f3f3f;
 	margin-top: 20px;
 	padding-top: 20px;
-	text-align: right;
+}
+.post-footer-time{
+    color: #7d7d7d;
+    margin-top: 20px;
+    text-align: left;
 }
 .post-footer-categories{
-	color: #fc0;
+    color: #fc0;
+    float: right;
 }
