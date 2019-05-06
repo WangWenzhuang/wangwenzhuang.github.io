@@ -37,7 +37,7 @@ a:visited{
 @media (min-width:768px){
     .menu{
         width: 90%;
-        max-width: 691px;
+        max-width: 600px;
     }
 }
 .menu ul{

@@ -4,39 +4,40 @@ layout: page
 ---
 <script>
 	$(function () {
-        $("#blog").css("color","#fc0");
+		$("#blog").css("color", "#fc0");
 	});
 </script>
 <div class="index">
 	{% for post in paginator.posts %}
-		<div class="index-item">
-				<a href="{{ post.url }}" title="{{ post.title }}">
-			<span class="index-ite-time">
-				<span class="fa fa-calendar"></span>&nbsp;
-				<time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;</time>
-			</span>
-			
-				{{ post.title }}
-			</a>
-		</div>
+	<div class="index-item">
+		<a href="{{ post.url }}" title="{{ post.title }}">
+			{{ post.title }}
+		</a>
+		<span class="index-ite-time">
+			<span class="fa fa-calendar"></span>&nbsp;
+			<time datetime="{{ post.date | date:"%Y-%m-%d" }}">
+				{{ post.date | date:"%Y-%m-%d" }}&nbsp;&nbsp;&nbsp;
+			</time>
+		</span>
+	</div>
 	{% endfor %}
 	<div class="index-pagination">
 		{% if paginator.previous_page %}
-			{% if paginator.previous_page == 1 %}
-				<a href="/"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
-			{% else %}
-				<a href="/page{{ paginator.previous_page }}"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
-			{% endif %}
+		{% if paginator.previous_page == 1 %}
+		<a href="/"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
 		{% else %}
-			<span class="index-pagination-disabled"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</span>
+		<a href="/page{{ paginator.previous_page }}"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</a>
+		{% endif %}
+		{% else %}
+		<span class="index-pagination-disabled"><span class="fa fa-chevron-circle-left fa-lg"></span>&nbsp;上一页</span>
 		{% endif %}
 
 		&nbsp;&nbsp;&nbsp;&nbsp;<span>{{ paginator.page }}</span>&nbsp;/&nbsp;<span>{{ paginator.total_pages }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
 
 		{% if paginator.next_page %}
-			<a href="/page{{ paginator.next_page }}">下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></a>
+		<a href="/page{{ paginator.next_page }}">下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></a>
 		{% else %}
-			<span class="index-pagination-disabled">下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></span>
+		<span class="index-pagination-disabled">下一页&nbsp;<span class="fa fa-chevron-circle-right fa-lg"></span></span>
 		{% endif %}
 	</div>
 </div>
