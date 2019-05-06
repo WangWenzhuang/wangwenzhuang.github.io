@@ -74,7 +74,7 @@ a:visited{
 @media (min-width:768px){
     .footer{
         width: 90%;
-        max-width: 691px;
+        max-width: 600px;
     }
 }
 /*index*/
@@ -88,7 +88,7 @@ a:visited{
 @media (min-width:768px){
     .index {
         width: 90%;
-        max-width: 691px;
+        max-width: 600px;
     }
 }
 .index-item{
@@ -130,15 +130,13 @@ a:visited{
 .post-title{
     font-weight: bold;
     margin-top: 40px;
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-align: left;
     border-bottom: 1px solid #3f3f3f;
     padding-bottom: 20px;
 }
-.post-title span{
-    color: #fc0;
-}
 .post-time{
+    color: #7d7d7d;
     margin-top: 20px;
     text-align: right;
 }
