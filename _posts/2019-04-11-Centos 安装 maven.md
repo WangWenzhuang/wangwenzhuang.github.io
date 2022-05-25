@@ -30,7 +30,7 @@ yum -y install apache-maven
 
 在 *settings.xml* 文件中的 *mirrors* 下添加 *mirror* 标签
 
-`vi /etc/maven/settings.xml`
+**vi /etc/maven/settings.xml**
 
 ```bash
 <mirror>

@@ -29,7 +29,11 @@ vi /etc/sysconfig/jenkins
 
 JENKINS_PORT="8080”，默认8080
 
-启动：`service jenkins start/stop/restart`
+启动：
+
+```bash
+service jenkins start/stop/restart
+```
 
 下面两个插件可以和 gitlab 配合持续集成
 
