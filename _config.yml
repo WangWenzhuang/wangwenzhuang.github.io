@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
-url: http://www.wangwenzhuang.com
+url: https://wangwenzhuang.github.io
 author: 王文壮
 encoding: utf-8
 paginate: 50
