@@ -18,7 +18,7 @@ sudo yum install -y nginx
 开机启动：
 
 ```bash
-sudo systemctl enable nginx.service**
+sudo systemctl enable nginx.service
 ```
 
 目录：/etc/nginx/nginx.conf
