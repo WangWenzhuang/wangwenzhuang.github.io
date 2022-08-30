@@ -13,7 +13,11 @@ sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-cento
 sudo yum install -y nginx
 ```
 
-启动：**sudo systemctl start nginx.service**
+启动：
+
+```bash
+sudo systemctl start nginx.service
+```
 
 开机启动：
 
