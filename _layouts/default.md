@@ -10,6 +10,8 @@
   <link rel="fluid-icon" href="/images/fluidicon.png" />
   <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon.png" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/monokai.sublime.syntax.css" />
@@ -33,8 +35,6 @@
   <div class="footer">
     {% include footer.md %}
   </div>
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
