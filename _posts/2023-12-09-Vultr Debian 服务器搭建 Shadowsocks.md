@@ -1,13 +1,11 @@
 ---
 layout: post
-title: "Debian Shadowsocks 搭建"
+title: "Vultr Debian 服务器搭建 Shadowsocks"
 description: ""
 category: 技术
 tags: ["Shadowsocks"]
 published: true
 ---
-
-## Vultr
 
 ```bash
 ufw disable
