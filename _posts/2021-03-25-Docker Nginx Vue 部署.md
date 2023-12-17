@@ -10,8 +10,7 @@ published: true
 ## Dockerfile
 
 ```bash
-FROM nginx 
-MAINTAINER Wangwenzhuang "1020304029@qq.com"
+FROM nginx:1.23.4
 # 更改时区
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
 # 解决中文乱码
@@ -65,5 +64,5 @@ docker build . -t=“mynginx”
 ## 运行容器
 
 ```bash
-docker run --name=website --privileged=true --restart=always -d -p 8081:80 mynginx
+docker run --name=website --restart=always -d -p 8081:80 mynginx
 ```

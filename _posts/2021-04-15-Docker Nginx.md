@@ -96,7 +96,7 @@ docker build . -t="nginx_proxy"
 ## 运行
 
 ```bash
-docker run --name=nginx_proxy --restart=always -d -p 80:80 -p 443:443 -v /root/logs/nginx:/var/log/nginx nginx_proxy
+docker run --name=nginx_proxy --restart=always -d -p 80:80 -p 443:443 -v ./logs/nginx:/var/log/nginx nginx_proxy
 ```
 
 ## 使用 docker-compose 运行

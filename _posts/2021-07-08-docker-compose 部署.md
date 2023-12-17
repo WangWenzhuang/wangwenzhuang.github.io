@@ -13,22 +13,8 @@ published: true
 echo '*****   构建   *****'
 mvn clean package -P test -Dmaven.test.skip=true
 
-mkdir -p /root/logs/lszy1
-mkdir -p /root/logs/lszy2
-mkdir -p /root/logs/lszy3
-
 echo '*****   部署   *****'
 docker-compose up --force-recreate --build -d
-
-echo '*****   热备   *****'
-if docker ps -f NAME=lszyapibackup | grep -i lszyapibackup; then
-    docker stop $(docker ps -f NAME=lszyapibackup -q)
-fi
-if docker ps -f NAME=lszyapibackup -a | grep -i lszyapibackup; then
-    docker rm $(docker ps -f NAME=lszyapibackup -q -a)
-fi
-docker run --name=lszyapibackup --privileged=true --restart=always -m 512M -d -p 8083:8081 lszyapi
-
 
 echo '*****   删除none镜像   *****'
 docker rmi $(docker images | grep "none" | awk '{print $3}')
@@ -43,11 +29,10 @@ version: '3'
 
 services:
   nginx:
-    container_name: lszyapi_nginx
-    image: lszyapi_nginx
+    container_name: api_nginx
+    image: api_nginx
     build: ./nginx
     restart: always
-    privileged: true
     links:
       - api1
       - api2
@@ -60,39 +45,28 @@ services:
       - api3
 
   api1:
-    container_name: lszyapi1
+    container_name: api1
     build:
       context: .
       dockerfile: ./java/Dockerfile
-    image: lszyapi
+    image: api
     restart: always
-    privileged: true
-    volumes:
-      - /root/logs/lszy1:/root/logs
 
   api2:
-    container_name: lszyapi2
-    image: lszyapi
+    container_name: api2
+    image: api
     restart: always
-    privileged: true
-    volumes:
-      - /root/logs/lszy2:/root/logs
 
   api3:
-    container_name: lszyapi3
-    image: lszyapi
+    container_name: api3
+    image: api
     restart: always
-    privileged: true
-    volumes:
-      - /root/logs/lszy3:/root/logs
 ```
 
 ## Java 环境 Dockerfile
 
 ```bash
-FROM daocloud.io/library/java:8
-
-MAINTAINER Wangwenzhuang "1020304029@qq.com"
+FROM java:8
 
 # 更改时区
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
@@ -100,7 +74,7 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shangh
 # 解决中文乱码
 ENV LANG C.UTF-8
 
-ADD ./target/lszy-1.0.jar app.jar
+ADD ./target/api-1.0.jar app.jar
 
 CMD java -jar app.jar
 
@@ -110,9 +84,7 @@ EXPOSE 8081
 ## nginx Dockerfile
 
 ```bash
-FROM daocloud.io/nginx
-
-MAINTAINER Wangwenzhuang "1020304029@qq.com"
+FROM nginx:1.23.4
 
 # 更改时区
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone

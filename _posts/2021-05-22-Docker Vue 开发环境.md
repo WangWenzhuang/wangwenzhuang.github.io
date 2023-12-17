@@ -11,7 +11,6 @@ published: true
 
 ```bash
 FROM daocloud.io/node
-MAINTAINER Wangwenzhuang "1020304029@qq.com"
 # 更改时区
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
 # 解决中文乱码
@@ -28,13 +27,13 @@ EXPOSE 8080
 ## 编译容器
 
 ```bash
-docker build . -t="vuedev"
+docker build . -t="vue_dev"
 ```
 
 ## 运行容器
 
 ```bash
-docker run -i -t -d  -p 9527:8080 --restart=always -v /lszy_admin_web:/source --name=lszydev --privileged=true vuedev
+docker run -i -t -d  -p 9527:8080 --restart=always -v /lszy_admin_web:/source --name=vue_dev --privileged=true vue_dev
 ```
 
 ## 编译&运行 Vue
