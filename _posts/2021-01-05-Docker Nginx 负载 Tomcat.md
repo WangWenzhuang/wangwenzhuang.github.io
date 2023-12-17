@@ -78,18 +78,13 @@ http {
 ## Dockerfile
 
 ```bash
-FROM centos
-
-MAINTAINER Wangwenzhuang "1020304029@qq.com"
+FROM java:8
 
 # 更改时区
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
 
 # 解决中文乱码
 ENV LANG C.UTF-8
-
-# 安装 java jdk 8
-RUN yum -y install java-1.8.0-openjdk*
 
 ADD target/database-1.0.jar app.jar
 
@@ -110,12 +105,10 @@ docker build . -t="database"
 echo '*****   停止服务1，使用热备服务2   *****'
 #先停止databas1，然后启动database1，这样服务不会断，会使用热备database2
 if docker ps -f NAME=database1 | grep -i database1; then
-    docker stop $(docker ps -f NAME=database1 -q)
+    docker stop database1
+    docker rm database1
 fi
-if docker ps -f NAME=database1 -a | grep -i database1; then
-    docker rm $(docker ps -f NAME=database1 -q -a)
-fi
-docker run --name=database1 --privileged=true --restart=always -d -p 8081:8081 database
+docker run --name=database1 --restart=always -d -p 8081:8081 database
 echo '*****   启动服务1   *****'
 
 echo '*****   休眠10秒   *****'
@@ -123,12 +116,10 @@ sleep 10
 
 echo '*****   停止服务2   *****'
 if docker ps -f NAME=database2 | grep -i database2; then
-    docker stop $(docker ps -f NAME=database2 -q)
+    docker stop database2
+    docker rm database2
 fi
-if docker ps -f NAME=database2 -a | grep -i database2; then
-    docker rm $(docker ps -f NAME=database2 -q -a)
-fi
-docker run --name=database2 --privileged=true --restart=always -d -p 8082:8081 database
+docker run --name=database2 --restart=always -d -p 8082:8081 database
 echo '*****   启动服务2   *****'
 
 echo '*****   删除none镜像   *****'

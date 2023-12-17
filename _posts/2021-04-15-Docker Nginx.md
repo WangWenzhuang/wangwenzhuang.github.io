@@ -10,8 +10,7 @@ published: true
 ## Dockerfile
 
 ```bash
-FROM daocloud.io/nginx
-MAINTAINER Wangwenzhuang "1020304029@qq.com"
+FROM nginx:1.23.4
 # 更改时区
 RUN ln -snf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo Asia/Shanghai > /etc/timezone
 # 解决中文乱码
@@ -31,7 +30,6 @@ worker_processes  1;
 events {
     worker_connections  1024;
 }
-
 
 http {
     include       mime.types;
@@ -92,14 +90,37 @@ http {
 ## 编译
 
 ```bash
-docker build . -t="prodnginx"
+docker build . -t="nginx_proxy"
 ```
-
-
 
 ## 运行
 
 ```bash
-docker run --name=ls_nginx --restart=always --privileged=true -d -p 80:80 -p 443:443 -v /root/logs/nginx:/var/log/nginx prodnginx
+docker run --name=nginx_proxy --restart=always -d -p 80:80 -p 443:443 -v /root/logs/nginx:/var/log/nginx nginx_proxy
 ```
 
+## 使用 docker-compose 运行
+
+### docker-compose.yml
+
+```bash
+version: '3'
+
+services:
+  nginx:
+    container_name: nginx_proxy
+    build: .
+    image: nginx_proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./log:/var/log/nginx
+```
+
+### 运行
+
+```bash
+docker-compose up --force-recreate --build -d
+```
